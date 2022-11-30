@@ -1,0 +1,14 @@
+{
+  "type": "forgedfactory:alloy_kiln_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+  }
+}
