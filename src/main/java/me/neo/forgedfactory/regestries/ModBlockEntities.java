@@ -2,7 +2,6 @@ package me.neo.forgedfactory.regestries;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKilnEnt;
-import me.neo.forgedfactory.blocks.stone.bricksmasher.BrickSmasherEnt;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +13,6 @@ public class ModBlockEntities {
 
     public static final RegistryObject<BlockEntityType<AlloyKilnEnt>> ALLOY_KILN = BLOCK_ENTITIES.register("alloy_kiln",
             () -> BlockEntityType.Builder.of(AlloyKilnEnt::new, ModBlocks.ALLOY_KILN.get()).build(null));
-    public static final RegistryObject<BlockEntityType<BrickSmasherEnt>> BRICK_SMASHER = BLOCK_ENTITIES.register("brick_smasher",
-            () -> BlockEntityType.Builder.of(BrickSmasherEnt::new, ModBlocks.BRICK_SMASHER.get()).build(null));
-
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

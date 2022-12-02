@@ -1,0 +1,17 @@
+{
+  "block.forgedfactory.alloy_kiln": "Alloy Kiln",
+  "block.forgedfactory.hyper_radioactive_oganesson_block": "Block of H-R Oganesson",
+  "block.forgedfactory.oganesson_block": "Block of Oganesson",
+  "block.forgedfactory.titanium_block": "Block of Titanium",
+  "block.forgedfactory.tungsten_block": "Block of Tungsten",
+  "item.forgedfactory.entangled_ingot": "Entangled Ingot",
+  "item.forgedfactory.hyper_radioactive_oganesson_ingot": "Hyper Radioactive Oganesson Ingot",
+  "item.forgedfactory.hyper_radioactive_oganesson_nugget": "Hyper Radioactive Oganesson Nugget",
+  "item.forgedfactory.oganesson_ingot": "Oganesson Ingot",
+  "item.forgedfactory.oganesson_nugget": "Oganesson Nugget",
+  "item.forgedfactory.titanium_ingot": "Titanium Ingot",
+  "item.forgedfactory.titanium_nugget": "Titanium Nugget",
+  "item.forgedfactory.tungsten_ingot": "Tungsten Ingot",
+  "item.forgedfactory.tungsten_nugget": "Tungsten Nugget",
+  "itemGroup.fftab": "Forged Factory"
+}

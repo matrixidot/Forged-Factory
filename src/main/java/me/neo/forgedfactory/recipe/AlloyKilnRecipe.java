@@ -31,6 +31,14 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
                (ingredients.get(0).test(pContainer.getItem(1)) && ingredients.get(1).test(pContainer.getItem(0)));
     }
 
+    public int getIngAmnt(int index) {
+        ItemStack[] stacks = ingredients.get(index).getItems();
+        for (ItemStack stack : stacks) {
+            return stack.getCount();
+        }
+        return 0;
+    }
+
     @Override
     public NonNullList<Ingredient> getIngredients() {
         return ingredients;
@@ -82,7 +90,6 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
             NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
-
             for (int i = 0; i < ingredients.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }

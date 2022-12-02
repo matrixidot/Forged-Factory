@@ -2,13 +2,15 @@
   "type": "forgedfactory:alloy_kiln_recipe",
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_ingot",
+      "count": 3
     },
     {
       "item": "minecraft:gold_ingot"
     }
   ],
   "output": {
-    "item": "minecraft:diamond"
+    "item": "minecraft:diamond",
+    "count": 3
   }
 }

@@ -2,12 +2,12 @@ package me.neo.forgedfactory.regestries;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKiln;
-import me.neo.forgedfactory.blocks.stone.bricksmasher.BrickSmasher;
 import me.neo.forgedfactory.items.CreativeModTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,9 +22,16 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ALLOY_KILN = registerBlock("alloy_kiln",
             () -> new AlloyKiln(BlockBehaviour.Properties.of(Material.STONE).strength(5f).noOcclusion()), CreativeModTab.FORGED_FACTORY);
+    public static final RegistryObject<Block> HYPER_RADIOACTIVE_OGANESSON_BLOCK = registerBlock("hyper_radioactive_oganesson_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> OGANESSON_BLOCK = registerBlock("oganesson_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> TUNGSTEN_BLOCK = registerBlock("tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    public static final RegistryObject<Block> BRICK_SMASHER = registerBlock("brick_smasher",
-            () -> new BrickSmasher(BlockBehaviour.Properties.of(Material.STONE).strength(5f).noOcclusion()), CreativeModTab.FORGED_FACTORY);
+
 
 
     // Registers a new block along with its item.
