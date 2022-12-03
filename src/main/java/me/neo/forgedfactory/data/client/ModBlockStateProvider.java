@@ -19,7 +19,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_BLOCK.get());
         simpleBlock(ModBlocks.TUNGSTEN_BLOCK.get());
-        directionalBlock(ModBlocks.ALLOY_KILN.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
+        simpleBlock(ModBlocks.TIN_BLOCK.get());
+        simpleBlock(ModBlocks.TIN_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_TIN_ORE.get());
+        simpleBlock(ModBlocks.TITANIUM_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+
+
+        horizontalBlock(ModBlocks.ALLOY_KILN.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
     }
 
 

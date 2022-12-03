@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "forgedfactory:item/hyper_radioactive_oganesson_nugget"
-  }
-}

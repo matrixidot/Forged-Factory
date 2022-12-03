@@ -1,4 +1,5 @@
-// 1.19.2	2022-12-02T18:12:34.5480876	Tags for minecraft:item
-8710a04cd8807f19e9075b201667aa46ff6eb758 data/forge/tags/items/ingots.json
-ebf7b3519cb3d6173b541f6fc248dcb0cab35294 data/forge/tags/items/nuggets.json
-34e8348f8aaac87a8ca62410111e829d0b07d214 data/forge/tags/items/storage_blocks.json
+// 1.19.2	2022-12-03T17:28:46.0078688	Tags for minecraft:item
+70e968ed4bd0f3afadde596f3c551cd90330dad4 data/forge/tags/items/ingots.json
+320a711167e87ea9c095d3eec33c6a105dbc5d6b data/forge/tags/items/nuggets.json
+1105bad13ccfdf0c95744488665593b5ba21deb2 data/forge/tags/items/raw_materials.json
+4d6cf6348405d50a89729f97954e8d6e992b6ef6 data/forge/tags/items/storage_blocks.json

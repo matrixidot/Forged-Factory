@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "forgedfactory:titanium_ingot"
+              "forgedfactory:tin_ingot"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "forgedfactory:titanium_b2i"
+        "recipe": "forgedfactory:tin_i2b"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "forgedfactory:titanium_b2i"
+      "forgedfactory:tin_i2b"
     ]
   }
 }

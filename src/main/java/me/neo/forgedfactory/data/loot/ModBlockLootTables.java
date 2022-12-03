@@ -2,6 +2,7 @@ package me.neo.forgedfactory.data.loot;
 
 
 import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
@@ -11,10 +12,13 @@ public class ModBlockLootTables extends BlockLoot {
     protected void addTables() {
         oreDrops();
         blockDrops();
-        //blockEntityDrops();
     }
 
     private void oreDrops() {
+        this.add(ModBlocks.TIN_ORE.get(), (block) -> createOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));
+        this.add(ModBlocks.DEEPSLATE_TIN_ORE.get(), (block) -> createOreDrop(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get()));
+        this.add(ModBlocks.TITANIUM_ORE.get(), (block) -> createOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(), (block) -> createOreDrop(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
 
     }
     private void blockDrops() {
@@ -22,6 +26,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.TITANIUM_BLOCK.get());
         this.dropSelf(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
         this.dropSelf(ModBlocks.TUNGSTEN_BLOCK.get());
+        this.dropSelf(ModBlocks.TIN_BLOCK.get());
         this.dropSelf(ModBlocks.ALLOY_KILN.get());
     }
 

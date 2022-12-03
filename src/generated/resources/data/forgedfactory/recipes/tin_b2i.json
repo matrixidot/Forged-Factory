@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "forgedfactory:tin_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "forgedfactory:tin_ingot"
+  }
+}

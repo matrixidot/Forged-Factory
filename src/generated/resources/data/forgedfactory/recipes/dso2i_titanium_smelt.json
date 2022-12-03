@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "forgedfactory:deepslate_titanium_ore"
+  },
+  "result": "forgedfactory:titanium_ingot"
+}

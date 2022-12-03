@@ -4,6 +4,11 @@
     "forgedfactory:hyper_radioactive_oganesson_block",
     "forgedfactory:titanium_block",
     "forgedfactory:tungsten_block",
+    "forgedfactory:tin_block",
+    "forgedfactory:tin_ore",
+    "forgedfactory:deepslate_tin_ore",
+    "forgedfactory:titanium_ore",
+    "forgedfactory:deepslate_titanium_ore",
     "forgedfactory:alloy_kiln"
   ]
 }

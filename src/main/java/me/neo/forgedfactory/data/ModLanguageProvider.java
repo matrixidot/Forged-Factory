@@ -5,6 +5,7 @@ import me.neo.forgedfactory.setup.ModBlocks;
 import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+import net.minecraftforge.fml.common.Mod;
 
 public class ModLanguageProvider extends LanguageProvider {
     public ModLanguageProvider(DataGenerator gen, String modid, String locale) {
@@ -16,18 +17,48 @@ public class ModLanguageProvider extends LanguageProvider {
         add("itemGroup." + CreativeModTab.FORGED_FACTORY.getRecipeFolderName(), "Forged Factory");
 
         add(ModItems.ENTANGLED_INGOT.get(), "Entangled Ingot");
-        add(ModItems.HYPER_RADIOACTIVE_OGANESSON_INGOT.get(), "Hyper Radioactive Oganesson Ingot");
-        add(ModItems.HYPER_RADIOACTIVE_OGANESSON_NUGGET.get(), "Hyper Radioactive Oganesson Nugget");
+
+        add(ModItems.HR_OGN_INGOT.get(), "Hyper Radioactive Oganesson Ingot");
+        add(ModItems.HR_OGN_NUGGET.get(), "Hyper Radioactive Oganesson Nugget");
+        add(ModItems.HR_OGN_DUST.get(), "Hyper Radioactive Oganesson Dust");
+        add(ModItems.HR_OGN_PLATE.get(), "Hyper Radioactive Oganesson Plate");
+
         add(ModItems.OGANESSON_INGOT.get(), "Oganesson Ingot");
         add(ModItems.OGANESSON_NUGGET.get(), "Oganesson Nugget");
+        add(ModItems.OGANESSON_DUST.get(), "Oganesson Dust");
+        add(ModItems.OGANESSON_PLATE.get(), "Oganesson Plate");
+
         add(ModItems.TITANIUM_INGOT.get(), "Titanium Ingot");
         add(ModItems.TITANIUM_NUGGET.get(), "Titanium Nugget");
+        add(ModItems.TITANIUM_DUST.get(), "Titanium Dust");
+        add(ModItems.TITANIUM_PLATE.get(), "Titanium Plate");
+        add(ModItems.RAW_TITANIUM.get(), "Raw Titanium");
+
         add(ModItems.TUNGSTEN_INGOT.get(), "Tungsten Ingot");
         add(ModItems.TUNGSTEN_NUGGET.get(), "Tungsten Nugget");
+        add(ModItems.TUNGSTEN_DUST.get(), "Tungsten Dust");
+        add(ModItems.TUNGSTEN_PLATE.get(), "Tungsten Plate");
+
+        add(ModItems.TIN_INGOT.get(), "Tin Ingot");
+        add(ModItems.TIN_NUGGET.get(), "Tin Nugget");
+        add(ModItems.TIN_DUST.get(), "Tin Dust");
+        add(ModItems.TIN_PLATE.get(), "Tin Plate");
+        add(ModItems.RAW_TIN.get(), "Raw Tin");
+
+        // Storage Blocks
         add(ModBlocks.OGANESSON_BLOCK.get(), "Block of Oganesson");
         add(ModBlocks.TITANIUM_BLOCK.get(), "Block of Titanium");
         add(ModBlocks.TUNGSTEN_BLOCK.get(), "Block of Tungsten");
         add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), "Block of H-R Oganesson");
+        add(ModBlocks.TIN_BLOCK.get(), "Block of Tin");
+
+        // Ores
+        add(ModBlocks.TIN_ORE.get(), "Tin Ore");
+        add(ModBlocks.DEEPSLATE_TIN_ORE.get(), "Deepslate Tin Ore");
+        add(ModBlocks.TITANIUM_ORE.get(), "Titanium Ore");
+        add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(), "Deepslate Titanium Ore");
+
+        // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");
     }
 }

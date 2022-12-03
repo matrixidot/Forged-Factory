@@ -108,7 +108,7 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
         if (cap == ForgeCapabilities.ITEM_HANDLER) {
             if (side == null) return lazyItemHandler.cast();
             if (directionWrappedHandlerMap.containsKey(side)) {
-                Direction localDir = this.getBlockState().getValue(AlloyKiln.FACING);
+                Direction localDir = this.getBlockState().getValue(AlloyKiln.HORIZONTAL_FACING);
                 if (side == Direction.UP || side == Direction.DOWN) return directionWrappedHandlerMap.get(side).cast();
                 return switch (localDir) {
                     case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();

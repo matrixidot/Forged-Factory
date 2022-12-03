@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "forgedfactory:tungsten_dust"
+  },
+  "result": "forgedfactory:tungsten_ingot"
+}

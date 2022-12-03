@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "forgedfactory:hyper_radioactive_oganesson_ingot"
+              "forgedfactory:oganesson_dust"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "forgedfactory:h-r_ogn_n2i"
+        "recipe": "forgedfactory:d2i_oganesson_blast"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "forgedfactory:h-r_ogn_n2i"
+      "forgedfactory:d2i_oganesson_blast"
     ]
   }
 }

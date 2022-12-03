@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "forgedfactory:hyper_radioactive_oganesson_ingot"
+      "item": "forgedfactory:hr_ogn_ingot"
     }
   },
   "pattern": [

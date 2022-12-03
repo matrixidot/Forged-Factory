@@ -22,19 +22,34 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
                 .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
-                .add(ModBlocks.TUNGSTEN_BLOCK.get());
+                .add(ModBlocks.TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
                 .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
-                .add(ModBlocks.TUNGSTEN_BLOCK.get());
-
+                .add(ModBlocks.TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.TIN_BLOCK.get());
+        tag(Tags.Blocks.ORES)
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
     }
 }

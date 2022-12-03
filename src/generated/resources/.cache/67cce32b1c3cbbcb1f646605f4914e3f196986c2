@@ -1,6 +1,11 @@
-// 1.19.2	2022-12-02T23:37:21.2915007	LootTables
+// 1.19.2	2022-12-03T17:28:46.0068682	LootTables
 00e573e79eb8933f1c23c4b345f2ad4cf3c89fe8 data/forgedfactory/loot_tables/blocks/alloy_kiln.json
+c57bc89a8efa7f55e195d6453b25473e3e25104a data/forgedfactory/loot_tables/blocks/deepslate_tin_ore.json
+098c3967b0dd1a3173c8c1e76b3f53efa3fd53ac data/forgedfactory/loot_tables/blocks/deepslate_titanium_ore.json
 fd4740f1dcee4f18607409e320bb35cca0f26141 data/forgedfactory/loot_tables/blocks/hyper_radioactive_oganesson_block.json
 1efc3c38dfb90dc32a0ba25de7ff2fe2060e6dff data/forgedfactory/loot_tables/blocks/oganesson_block.json
+0464a4edae6e1e9e757dec62955b757ea735f829 data/forgedfactory/loot_tables/blocks/tin_block.json
+1982a2b72fa734878b3b53e938acd20cfb3ef3b5 data/forgedfactory/loot_tables/blocks/tin_ore.json
 80cf6395137b9a736710c08b0e855a4298cb1fbf data/forgedfactory/loot_tables/blocks/titanium_block.json
+c836f30ff1b7e9f5af8831542f667bb5b48c8db7 data/forgedfactory/loot_tables/blocks/titanium_ore.json
 55f4922a95bed59b44f51bf85b8cebf85b39e6b2 data/forgedfactory/loot_tables/blocks/tungsten_block.json
