@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "forgedfactory:titanium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "forgedfactory:titanium_nugget"
+  }
+}
