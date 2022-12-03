@@ -189,10 +189,10 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
         Optional<AlloyKilnRecipe> recipe = level.getRecipeManager().getRecipeFor(AlloyKilnRecipe.Type.INSTANCE, inventory, level);
 
         if(hasRecipe(entity) && entity.itemHandler.getStackInSlot(3).getCount() + recipe.get().getResultItem().getCount() < 65) {
-            entity.itemHandler.extractItem(0, recipe.get().getIngAmnt(0), false);
-            entity.itemHandler.extractItem(1, recipe.get().getIngAmnt(1), false);
+            entity.itemHandler.extractItem(0, recipe.get().getFirstIngCount(), false);
+            entity.itemHandler.extractItem(1, recipe.get().getSecondIngCount(), false);
             entity.itemHandler.setStackInSlot(3, new ItemStack(recipe.get().getResultItem().getItem(),
-                    entity.itemHandler.getStackInSlot(3).getCount() + recipe.get().getResultItem().getCount()));
+                    entity.itemHandler.getStackInSlot(3).getCount() + recipe.get().getOutputAmount()));
 
             entity.resetProgress();
         }
@@ -207,14 +207,10 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
         // Gets the recipes from the GemInfusingStationRecipe json files.
         Optional<AlloyKilnRecipe> recipe = level.getRecipeManager().getRecipeFor(AlloyKilnRecipe.Type.INSTANCE, inventory, level);
         // Returns if the recipe exists or not.
-        return recipe.isPresent() && hasEnoughIngredients(inventory, recipe.get()) && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
+        return recipe.isPresent() && hasEnoughIngredients(inventory, recipe.get(), entity) && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
     }
-    private static boolean hasEnoughIngredients(SimpleContainer inventory, AlloyKilnRecipe recipe) {
-        System.out.println(recipe.getIngAmnt(0) + " " + recipe.getIngredients().get(0).getItems());
-        System.out.println(recipe.getIngAmnt(1) + " " + recipe.getIngredients().get(1).getItems());
-
-        if (inventory.getItem(0).getCount() >= recipe.getIngAmnt(0) && inventory.getItem(1).getCount() >= recipe.getIngAmnt(1)) return true;
-        return false;
+    private static boolean hasEnoughIngredients(SimpleContainer inventory, AlloyKilnRecipe recipe, AlloyKilnEnt ent) {
+        return recipe.matches(inventory, ent.level);
     }
 
     // Checks if the output slot is clogged by something else.

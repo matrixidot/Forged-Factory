@@ -18,6 +18,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("oganesson_block", modLoc("block/oganesson_block"));
         withExistingParent("titanium_block", modLoc("block/titanium_block"));
         withExistingParent("tungsten_block", modLoc("block/tungsten_block"));
+        withExistingParent("alloy_kiln", modLoc("block/alloy_kiln"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemGenerated, "entangled_ingot");

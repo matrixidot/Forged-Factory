@@ -24,7 +24,7 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class AlloyKiln extends BaseEntityBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
     public static final BooleanProperty LIT = BooleanProperty.create("lit");
     public AlloyKiln(Properties properties) { super(properties); }
 

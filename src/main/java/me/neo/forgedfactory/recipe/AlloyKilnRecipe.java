@@ -11,37 +11,37 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
 public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
     private final ResourceLocation id;
-    private final ItemStack output;
-    private final NonNullList<Ingredient> ingredients;
+    private ItemStack output;
+    private NonNullList<Ingredient> ingredient;
+    private int firstIngCount;
+    private int secondIngCount;
+    private int outputAmount;
 
-    public AlloyKilnRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> ingredients) {
+    public AlloyKilnRecipe(ResourceLocation id) {
         this.id = id;
-        this.output = output;
-        this.ingredients = ingredients;
     }
 
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         if (pLevel.isClientSide()) return false;
-        return (ingredients.get(0).test(pContainer.getItem(0)) && ingredients.get(1).test(pContainer.getItem(1))) ||
-               (ingredients.get(0).test(pContainer.getItem(1)) && ingredients.get(1).test(pContainer.getItem(0)));
+        return (test(pContainer, 0, 0, firstIngCount) && test(pContainer, 1, 1, secondIngCount));
     }
-
-    public int getIngAmnt(int index) {
-        ItemStack[] stacks = ingredients.get(index).getItems();
-        for (ItemStack stack : stacks) {
-            return stack.getCount();
-        }
-        return 0;
+    // Returns true if the stack matches with the stack in the slot and if the amount is the same or higher.
+    private boolean test(SimpleContainer container, int ingNum,int slot, int amnt) {
+        return ingredient.get(ingNum).test(container.getItem(slot)) && container.getItem(slot).getCount() >= amnt;
     }
+    public int getFirstIngCount() { return firstIngCount; }
+    public int getSecondIngCount() { return secondIngCount; }
+    public int getOutputAmount() { return outputAmount; }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
-        return ingredients;
+        return ingredient;
     }
 
     @Override
@@ -85,34 +85,44 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
         public static final ResourceLocation ID = new ResourceLocation(FF.MOD_ID, "alloy_kiln_recipe");
 
         @Override
-        public AlloyKilnRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
-
-            JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
-            for (int i = 0; i < ingredients.size(); i++) {
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
+        public AlloyKilnRecipe fromJson(ResourceLocation pRecipeId, JsonObject json) {
+            AlloyKilnRecipe recipe = new AlloyKilnRecipe(pRecipeId);
+            JsonArray ingredientJson = json.getAsJsonArray("ingredients");
+            recipe.ingredient = NonNullList.withSize(2, Ingredient.EMPTY);
+            recipe.firstIngCount = GsonHelper.getAsInt(ingredientJson.get(0).getAsJsonObject(), "count");
+            recipe.secondIngCount = GsonHelper.getAsInt(ingredientJson.get(1).getAsJsonObject(), "count");
+            for (int i = 0; i < recipe.ingredient.size(); i++) {
+                recipe.ingredient.set(i, Ingredient.fromJson(ingredientJson.get(i)));
             }
-            return new AlloyKilnRecipe(pRecipeId, output, inputs);
+            // Output Slot
+            ResourceLocation itemResourceLocation = ResourceLocation.of(GsonHelper.getAsString(json.get("output").getAsJsonObject(), "item", "minecraft:air"), ':');
+            int itemAmount = GsonHelper.getAsInt(json.get("output").getAsJsonObject(), "count", 1);
+            recipe.output = new ItemStack(ForgeRegistries.ITEMS.getValue(itemResourceLocation));
+            recipe.outputAmount = itemAmount;
+
+
+            return recipe;
         }
 
         @Override
         public @Nullable AlloyKilnRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
-            NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
-            for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromNetwork(pBuffer));
-            }
-            ItemStack output = pBuffer.readItem();
-            return new AlloyKilnRecipe(pRecipeId, output, inputs);
+            AlloyKilnRecipe recipe = new AlloyKilnRecipe(pRecipeId);
+            recipe.firstIngCount = pBuffer.readByte();
+            recipe.secondIngCount = pBuffer.readByte();
+            recipe.output = pBuffer.readItem();
+            recipe.outputAmount = pBuffer.readInt();
+            return recipe;
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf pBuffer, AlloyKilnRecipe pRecipe) {
-            pBuffer.writeInt(pRecipe.getIngredients().size());
-            for (Ingredient ing : pRecipe.getIngredients()) {
-                ing.toNetwork(pBuffer);
-            }
-            pBuffer.writeItemStack(pRecipe.getResultItem(), false);
+            pBuffer.writeByte(pRecipe.getFirstIngCount());
+            pBuffer.writeByte(pRecipe.getSecondIngCount());
+            pBuffer.writeItem(pRecipe.output);
+            pBuffer.writeInt(pRecipe.outputAmount);
+
+            pRecipe.ingredient.get(0).toNetwork(pBuffer);
+            pRecipe.ingredient.get(1).toNetwork(pBuffer);
         }
     }
 }

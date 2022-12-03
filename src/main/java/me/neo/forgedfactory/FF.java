@@ -2,6 +2,7 @@ package me.neo.forgedfactory;
 
 import com.mojang.logging.LogUtils;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKilnScreen;
+import me.neo.forgedfactory.recipe.ModRecipes;
 import me.neo.forgedfactory.setup.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
