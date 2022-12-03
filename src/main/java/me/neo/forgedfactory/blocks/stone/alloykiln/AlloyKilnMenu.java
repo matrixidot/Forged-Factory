@@ -1,8 +1,7 @@
 package me.neo.forgedfactory.blocks.stone.alloykiln;
 
-import me.neo.forgedfactory.regestries.ModBlockEntities;
-import me.neo.forgedfactory.regestries.ModBlocks;
-import me.neo.forgedfactory.regestries.ModMenuTypes;
+import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.setup.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

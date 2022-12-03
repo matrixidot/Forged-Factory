@@ -1,4 +1,4 @@
-package me.neo.forgedfactory.regestries;
+package me.neo.forgedfactory.setup;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKiln;
@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FF.MOD_ID);
 
     public static final RegistryObject<Block> ALLOY_KILN = registerBlock("alloy_kiln",
-            () -> new AlloyKiln(BlockBehaviour.Properties.of(Material.STONE).strength(5f).noOcclusion()), CreativeModTab.FORGED_FACTORY);
+            () -> new AlloyKiln(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);
     public static final RegistryObject<Block> HYPER_RADIOACTIVE_OGANESSON_BLOCK = registerBlock("hyper_radioactive_oganesson_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> OGANESSON_BLOCK = registerBlock("oganesson_block",

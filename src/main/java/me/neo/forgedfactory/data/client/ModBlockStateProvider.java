@@ -1,7 +1,7 @@
 package me.neo.forgedfactory.data.client;
 
 import me.neo.forgedfactory.FF;
-import me.neo.forgedfactory.regestries.ModBlocks;
+import me.neo.forgedfactory.setup.ModBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -18,4 +18,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.TITANIUM_BLOCK.get());
         simpleBlock(ModBlocks.TUNGSTEN_BLOCK.get());
     }
+
+
 }

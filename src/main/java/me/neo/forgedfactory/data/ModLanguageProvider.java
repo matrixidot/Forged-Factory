@@ -1,12 +1,10 @@
 package me.neo.forgedfactory.data;
 
 import me.neo.forgedfactory.items.CreativeModTab;
-import me.neo.forgedfactory.regestries.ModBlocks;
-import me.neo.forgedfactory.regestries.ModItems;
+import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.fml.common.Mod;
 
 public class ModLanguageProvider extends LanguageProvider {
     public ModLanguageProvider(DataGenerator gen, String modid, String locale) {

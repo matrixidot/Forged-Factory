@@ -1,7 +1,6 @@
-package me.neo.forgedfactory.regestries;
+package me.neo.forgedfactory.setup;
 
 import me.neo.forgedfactory.FF;
-import me.neo.forgedfactory.items.CreativeModTab;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

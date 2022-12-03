@@ -1,15 +1,13 @@
 package me.neo.forgedfactory.data;
 
 import me.neo.forgedfactory.FF;
-import me.neo.forgedfactory.regestries.ModBlocks;
-import me.neo.forgedfactory.regestries.ModItems;
+import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraftforge.common.Tags;
 
-import java.security.interfaces.RSAKey;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider {
@@ -64,6 +62,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_item", has(ModItems.TUNGSTEN_INGOT.get())).save(pFinishedRecipeConsumer, modId("tungsten_i2b"));
         ShapedRecipeBuilder.shaped(ModItems.TUNGSTEN_INGOT.get(), 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.TUNGSTEN_NUGGET.get())
                 .unlockedBy("has_item", has(ModItems.TUNGSTEN_NUGGET.get())).save(pFinishedRecipeConsumer, modId("tungsten_n2i"));
+
 
     }
 

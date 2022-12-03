@@ -1,7 +1,7 @@
 package me.neo.forgedfactory.data.loot;
 
 
-import me.neo.forgedfactory.regestries.ModBlocks;
+import me.neo.forgedfactory.setup.ModBlocks;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;

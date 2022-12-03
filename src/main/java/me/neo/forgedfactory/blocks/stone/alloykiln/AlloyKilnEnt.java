@@ -2,7 +2,7 @@ package me.neo.forgedfactory.blocks.stone.alloykiln;
 
 import me.neo.forgedfactory.blocks.WrappedHandler;
 import me.neo.forgedfactory.recipe.AlloyKilnRecipe;
-import me.neo.forgedfactory.regestries.ModBlockEntities;
+import me.neo.forgedfactory.setup.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

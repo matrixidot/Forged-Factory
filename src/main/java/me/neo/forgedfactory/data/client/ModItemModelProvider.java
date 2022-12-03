@@ -1,16 +1,11 @@
 package me.neo.forgedfactory.data.client;
 
 import me.neo.forgedfactory.FF;
-import me.neo.forgedfactory.regestries.ModBlocks;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
-
-import java.util.Locale;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {

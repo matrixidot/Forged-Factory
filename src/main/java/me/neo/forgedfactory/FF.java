@@ -2,7 +2,7 @@ package me.neo.forgedfactory;
 
 import com.mojang.logging.LogUtils;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKilnScreen;
-import me.neo.forgedfactory.regestries.*;
+import me.neo.forgedfactory.setup.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,7 +29,6 @@ public class FF {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
-
 
 
         modEventBus.addListener(this::commonSetup);

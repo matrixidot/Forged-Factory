@@ -1,7 +1,7 @@
 package me.neo.forgedfactory.blocks.stone.alloykiln;
 
 
-import me.neo.forgedfactory.regestries.ModBlockEntities;
+import me.neo.forgedfactory.setup.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;

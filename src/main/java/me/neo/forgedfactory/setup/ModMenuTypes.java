@@ -1,4 +1,4 @@
-package me.neo.forgedfactory.regestries;
+package me.neo.forgedfactory.setup;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKilnMenu;

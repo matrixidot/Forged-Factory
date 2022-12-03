@@ -1,8 +1,8 @@
 package me.neo.forgedfactory.data;
 
 import me.neo.forgedfactory.FF;
-import me.neo.forgedfactory.regestries.ModBlocks;
-import me.neo.forgedfactory.regestries.ModItems;
+import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
