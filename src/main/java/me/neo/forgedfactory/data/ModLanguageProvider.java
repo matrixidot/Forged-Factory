@@ -39,6 +39,15 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.TUNGSTEN_DUST.get(), "Tungsten Dust");
         add(ModItems.TUNGSTEN_PLATE.get(), "Tungsten Plate");
 
+        add(ModItems.BRONZE_INGOT.get(), "Bronze Ingot");
+        add(ModItems.BRONZE_NUGGET.get(), "Bronze Nugget");
+        add(ModItems.BRONZE_DUST.get(), "Bronze Dust");
+        add(ModItems.BRONZE_PLATE.get(), "Bronze Plate");
+
+        add(ModItems.COPPER_NUGGET.get(), "Copper Nugget");
+        add(ModItems.COPPER_DUST.get(), "Copper Dust");
+        add(ModItems.COPPER_PLATE.get(), "Copper Plate");
+
         add(ModItems.TIN_INGOT.get(), "Tin Ingot");
         add(ModItems.TIN_NUGGET.get(), "Tin Nugget");
         add(ModItems.TIN_DUST.get(), "Tin Dust");
@@ -51,6 +60,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.TUNGSTEN_BLOCK.get(), "Block of Tungsten");
         add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), "Block of H-R Oganesson");
         add(ModBlocks.TIN_BLOCK.get(), "Block of Tin");
+        add(ModBlocks.BRONZE_BLOCK.get(), "Block of Bronze");
 
         // Ores
         add(ModBlocks.TIN_ORE.get(), "Tin Ore");
@@ -60,5 +70,6 @@ public class ModLanguageProvider extends LanguageProvider {
 
         // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");
+        add(ModBlocks.BRICK_SMASHER.get(), "Brick Smasher");
     }
 }

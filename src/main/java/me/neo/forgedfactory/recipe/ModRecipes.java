@@ -12,6 +12,8 @@ public class ModRecipes {
     /* Recipe Serializers go here */
     public static final RegistryObject<RecipeSerializer<AlloyKilnRecipe>> ALLOY_KILN_RECIPE_SERIALIZER = SERIALIZERS.register("alloy_kiln_recipe",
             () -> AlloyKilnRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<BrickSmasherRecipe>> BRICK_SMASHER_RECIPE_SERIALIZER = SERIALIZERS.register("brick_smasher_recipe",
+            () -> BrickSmasherRecipe.Serializer.INSTANCE);
 
 
     public static void register(IEventBus eventBus) {

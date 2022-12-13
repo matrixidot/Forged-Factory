@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "forgedfactory:block/alloy_kiln",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "forgedfactory:block/alloy_kiln"
+    },
+    "facing=south": {
+      "model": "forgedfactory:block/alloy_kiln",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "forgedfactory:block/alloy_kiln",
+      "y": 270
+    }
+  }
+}

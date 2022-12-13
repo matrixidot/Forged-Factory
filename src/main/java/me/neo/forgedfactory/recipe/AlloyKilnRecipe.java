@@ -8,11 +8,17 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
     private final ResourceLocation id;
@@ -38,6 +44,15 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
     public int getFirstIngCount() { return firstIngCount; }
     public int getSecondIngCount() { return secondIngCount; }
     public int getOutputAmount() { return outputAmount; }
+
+    public List<Item> getFirstInputAsList() {
+        ItemStack stack = ingredient.get(0).getItems()[0];
+        return Collections.singletonList(stack.getItem());
+    }
+    public List<Item> getSecondInputAsList() {
+        ItemStack stack = ingredient.get(1).getItems()[0];
+        return Collections.singletonList(stack.getItem());
+    }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {

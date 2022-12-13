@@ -23,7 +23,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("deepslate_tin_ore", modLoc("block/deepslate_tin_ore"));
         withExistingParent("titanium_ore", modLoc("block/titanium_ore"));
         withExistingParent("deepslate_titanium_ore", modLoc("block/deepslate_titanium_ore"));
+        withExistingParent("bronze_block", modLoc("block/bronze_block"));
         withExistingParent("alloy_kiln", modLoc("block/alloy_kiln"));
+        withExistingParent("brick_smasher", modLoc("block/brick_smasher"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemGenerated, "entangled_ingot");
@@ -49,6 +51,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "tin_dust");
         builder(itemGenerated, "tin_plate");
         builder(itemGenerated, "raw_tin");
+        builder(itemGenerated, "bronze_ingot");
+        builder(itemGenerated, "bronze_nugget");
+        builder(itemGenerated, "bronze_dust");
+        builder(itemGenerated, "bronze_plate");
+        builder(itemGenerated, "copper_nugget");
+        builder(itemGenerated, "copper_dust");
+        builder(itemGenerated, "copper_plate");
+
 
     }
 

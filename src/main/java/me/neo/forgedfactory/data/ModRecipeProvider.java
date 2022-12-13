@@ -6,6 +6,7 @@ import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 
@@ -45,6 +46,15 @@ public class ModRecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(ModItems.TIN_INGOT.get(), 9).requires(ModBlocks.TIN_BLOCK.get())
                 .unlockedBy("has_item", has(ModItems.RAW_TIN.get())).save(pFinishedRecipeConsumer, modId("tin_b2i"));
 
+        ShapelessRecipeBuilder.shapeless(ModItems.BRONZE_NUGGET.get(), 9).requires(ModItems.BRONZE_INGOT.get())
+                .unlockedBy("has_item", has(ModItems.BRONZE_INGOT.get())).save(pFinishedRecipeConsumer, modId("bronze_i2n"));
+        ShapelessRecipeBuilder.shapeless(ModItems.BRONZE_INGOT.get(), 9).requires(ModBlocks.BRONZE_BLOCK.get())
+                .unlockedBy("has_item", has(ModItems.BRONZE_INGOT.get())).save(pFinishedRecipeConsumer, modId("bronze_b2i"));
+
+        ShapelessRecipeBuilder.shapeless(ModItems.COPPER_NUGGET.get(), 9).requires(Items.COPPER_INGOT)
+                .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_i2n"));
+
+
         /* SHAPED RECIPES */
 
         ShapedRecipeBuilder.shaped(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), 1).pattern("###").pattern("###").pattern("###")
@@ -73,6 +83,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_item", has(ModItems.TIN_INGOT.get())).save(pFinishedRecipeConsumer, modId("tin_i2b"));
         ShapedRecipeBuilder.shaped(ModItems.TIN_INGOT.get(), 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.TIN_NUGGET.get())
                 .unlockedBy("has_item", has(ModItems.TIN_INGOT.get())).save(pFinishedRecipeConsumer, modId("tin_n2i"));
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_BLOCK.get(), 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.BRONZE_INGOT.get())
+                .unlockedBy("has_item", has(ModItems.BRONZE_INGOT.get())).save(pFinishedRecipeConsumer, modId("bronze_i2b"));
+        ShapedRecipeBuilder.shaped(ModItems.BRONZE_INGOT.get(), 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.BRONZE_NUGGET.get())
+                .unlockedBy("has_item", has(ModItems.BRONZE_INGOT.get())).save(pFinishedRecipeConsumer, modId("bronze_n2i"));
+
+        ShapedRecipeBuilder.shaped(Items.COPPER_INGOT, 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.COPPER_NUGGET.get())
+                .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_n2i"));
 
         /* PROCESSING RECIPES */
         // Smelting

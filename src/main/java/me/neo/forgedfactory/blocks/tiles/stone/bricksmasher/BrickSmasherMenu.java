@@ -1,8 +1,9 @@
-package me.neo.forgedfactory.blocks.stone.alloykiln;
+package me.neo.forgedfactory.blocks.tiles.stone.bricksmasher;
 
 import me.neo.forgedfactory.setup.ModBlocks;
 import me.neo.forgedfactory.setup.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
@@ -12,34 +13,31 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class AlloyKilnMenu extends AbstractContainerMenu {
-    public final AlloyKilnEnt blockEntity;
+public class BrickSmasherMenu extends AbstractContainerMenu {
+    public final BrickSmasherEnt blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public AlloyKilnMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
+    public BrickSmasherMenu(int id, Inventory inventory, FriendlyByteBuf buf) {
+        this(id, inventory, inventory.player.level.getBlockEntity(buf.readBlockPos()), new SimpleContainerData(2));
     }
-    public AlloyKilnMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(ModMenuTypes.ALLOY_KILN_MENU.get(), id);
-        checkContainerSize(inv, 4);
-        blockEntity = (AlloyKilnEnt) entity;
-        this.level = inv.player.level;
+
+    public BrickSmasherMenu(int id, Inventory inventory, BlockEntity entity, ContainerData data) {
+        super(ModMenuTypes.BRICK_SMASHER_MENU.get(), id);
+        checkContainerSize(inventory, 2);
+        blockEntity = (BrickSmasherEnt) entity;
+        this.level = inventory.player.level;
         this.data = data;
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
+        addPlayerInventory(inventory);
+        addPlayerHotbar(inventory);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 43, 36));
-            this.addSlot(new SlotItemHandler(handler, 1, 77, 36));
-            this.addSlot(new SlotItemHandler(handler, 2, 8, 58));
-            this.addSlot(new SlotItemHandler(handler, 3, 140, 36));
+            this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
+            this.addSlot(new SlotItemHandler(handler, 1, 109, 35));
         });
         addDataSlots(data);
     }
     public boolean isCrafting() { return data.get(0) > 0; }
-    public boolean isBurning() { return data.get(2) > 0; }
-    public AlloyKilnEnt getBlockEntity() { return this.blockEntity; }
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
@@ -47,15 +45,6 @@ public class AlloyKilnMenu extends AbstractContainerMenu {
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
-    public int getBurnProgress() {
-        int i = this.data.get(3);
-        if (i == 0) {
-            i = 200;
-        }
-
-        return this.data.get(2) * 13 / i;
-    }
-
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.
@@ -72,7 +61,7 @@ public class AlloyKilnMenu extends AbstractContainerMenu {
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {
         Slot sourceSlot = slots.get(index);
@@ -108,9 +97,10 @@ public class AlloyKilnMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), pPlayer, ModBlocks.ALLOY_KILN.get());
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), pPlayer, ModBlocks.BRICK_SMASHER.get());
     }
 
+    // Perfect for using furnace inv as template.
     private void addPlayerInventory(Inventory playerInv) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
@@ -124,4 +114,5 @@ public class AlloyKilnMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInv, i, 8 + i * 18, 142));
         }
     }
+
 }

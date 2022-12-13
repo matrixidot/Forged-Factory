@@ -3,6 +3,7 @@ package me.neo.forgedfactory.data;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.setup.ModBlocks;
+import me.neo.forgedfactory.util.BlockTagsFF;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
@@ -27,6 +28,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.TITANIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get())
+                .add(ModBlocks.BRONZE_BLOCK.get())
+                .add(ModBlocks.BRICK_SMASHER.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
@@ -39,17 +42,30 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.TIN_BLOCK.get())
                 .add(ModBlocks.TIN_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.BRONZE_BLOCK.get())
+                .add(ModBlocks.BRICK_SMASHER.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
                 .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.BRONZE_BLOCK.get())
                 .add(ModBlocks.TIN_BLOCK.get());
         tag(Tags.Blocks.ORES)
                 .add(ModBlocks.TIN_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.TITANIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+
+        tag(BlockTagsFF.ORES_TIN).add(ModBlocks.TIN_ORE.get());
+        tag(BlockTagsFF.ORES_TITANIUM).add(ModBlocks.TIN_BLOCK.get());
+
+        tag(BlockTagsFF.STORAGE_BLOCKS_TIN).add(ModBlocks.TIN_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_BRONZE).add(ModBlocks.BRONZE_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_HR_OGN).add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_OGANESSON).add(ModBlocks.OGANESSON_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_TITANIUM).add(ModBlocks.TITANIUM_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_TUNGSTEN).add(ModBlocks.TUNGSTEN_BLOCK.get());
     }
 }

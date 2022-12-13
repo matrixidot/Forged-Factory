@@ -1,4 +1,9 @@
-// 1.19.2	2022-12-03T17:42:33.542204	Recipes
+// 1.19.2	2022-12-10T16:43:26.7533983	Recipes
+27aca8e6399d99c0d08686bed2a97dfc727ccf48 data/forgedfactory/advancements/recipes/fftab/bronze_b2i.json
+7528f92747258f0cc177017b1435445184f5aabf data/forgedfactory/advancements/recipes/fftab/bronze_i2b.json
+e20f21a24f37e1f0d0866d8f8b3c5d6e8fff656e data/forgedfactory/advancements/recipes/fftab/bronze_i2n.json
+1463bd956542a98880ec4bc05bf4956eeec4df51 data/forgedfactory/advancements/recipes/fftab/bronze_n2i.json
+82719b33e3efe4c3ee791a32b417665c68655c4c data/forgedfactory/advancements/recipes/fftab/copper_i2n.json
 c0c44520d703ba209e8fb8d3195486b6e75ea6ac data/forgedfactory/advancements/recipes/fftab/d2i_hr_ogn_blast.json
 62927859d585c73cce80ef7769cc6e4a9dea7cf2 data/forgedfactory/advancements/recipes/fftab/d2i_hr_ogn_smelt.json
 abd07d05509f721f057952a49189a9b8de3f9136 data/forgedfactory/advancements/recipes/fftab/d2i_oganesson_blast.json
@@ -41,6 +46,13 @@ b2f1622bac1af2caeb3e498d6b854f505970f314 data/forgedfactory/advancements/recipes
 b914997bc5105bd90c277a30da08570360b0ed24 data/forgedfactory/advancements/recipes/fftab/tungsten_i2b.json
 a8e626cd9e6337cda757ed87706e6095a8ae23fd data/forgedfactory/advancements/recipes/fftab/tungsten_i2n.json
 1a5d5ae5dede6b900af591e2e77a3b46fd9ec3b1 data/forgedfactory/advancements/recipes/fftab/tungsten_n2i.json
+40905ab8099badf630dfb86d5732be5b117e10c7 data/forgedfactory/advancements/recipes/misc/copper_n2i.json
+0d350ca0cf30b27423bd04de349ea513a6104d57 data/forgedfactory/recipes/bronze_b2i.json
+86ac5b6b1472c6dd234f5bee628ebe927452f4eb data/forgedfactory/recipes/bronze_i2b.json
+b5d6d953cb7a289e8bd1bd2b4bf6ce2958043646 data/forgedfactory/recipes/bronze_i2n.json
+61d40e6c2917f88f8fe8aebcb8b9527d4f1b9dea data/forgedfactory/recipes/bronze_n2i.json
+a87ffa2131ceaddc9e244d952049f5d85be0baed data/forgedfactory/recipes/copper_i2n.json
+ffa72cba09da86c24a0992b0adbc30e8312eae81 data/forgedfactory/recipes/copper_n2i.json
 cd6588def93fbfe78b4c514ddb6e32b72868e0e4 data/forgedfactory/recipes/d2i_hr_ogn_blast.json
 d7d8f07fa8a813e822e22c3aaa918bca52714093 data/forgedfactory/recipes/d2i_hr_ogn_smelt.json
 29ad32ae6e5b2279bbc541f54ee3bb7f4f6979de data/forgedfactory/recipes/d2i_oganesson_blast.json

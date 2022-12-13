@@ -1,8 +1,10 @@
-package me.neo.forgedfactory.blocks.stone.alloykiln;
+package me.neo.forgedfactory.blocks.tiles.stone.alloykiln;
 
 import me.neo.forgedfactory.blocks.WrappedHandler;
 import me.neo.forgedfactory.recipe.AlloyKilnRecipe;
+import me.neo.forgedfactory.recipe.ModRecipes;
 import me.neo.forgedfactory.setup.ModBlockEntities;
+import me.neo.forgedfactory.util.RecipeUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -15,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -84,7 +87,8 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch(slot) {
-                case 0,1 -> ForgeHooks.getBurnTime(stack, RecipeType.SMELTING) <= 0;
+                case 0 -> RecipeUtil.isFirstIngForAlloyKiln(level, stack);
+                case 1 -> RecipeUtil.isSecondIngForAlloyKiln(level, stack);
                 case 2 -> ForgeHooks.getBurnTime(stack, RecipeType.SMELTING) > 0;
                 case 3 -> false;
                 default -> super.isItemValid(slot, stack);
@@ -239,14 +243,21 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
 
     }
 
-
+    // Wrapped handler (ItemHandler, SlotToExtract, Slot&StackToInsert)
     private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
-            Map.of(Direction.DOWN, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 2, (i, s) -> false)),
-                    Direction.NORTH, LazyOptional.of(() -> new WrappedHandler(itemHandler, (index) -> index == 1,
-                            (index, stack) -> itemHandler.isItemValid(1, stack))),
-                    Direction.SOUTH, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 2, (i, s) -> false)),
-                    Direction.EAST, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 1,
-                            (index, stack) -> itemHandler.isItemValid(1, stack))),
-                    Direction.WEST, LazyOptional.of(() -> new WrappedHandler(itemHandler, (index) -> index == 0 || index == 1,
-                            (index, stack) -> itemHandler.isItemValid(0, stack) || itemHandler.isItemValid(1, stack))));
+        Map.of(Direction.DOWN, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 3, (i, s) -> false)),
+            Direction.NORTH, LazyOptional.of(() ->
+                        // Don't extract from third slot but insert to it.
+                            new WrappedHandler(itemHandler, (index) -> false, (index, stack) -> itemHandler.isItemValid(2, stack))),
+            Direction.SOUTH, LazyOptional.of(() ->
+                        // Just extract from output slot.
+                            new WrappedHandler(itemHandler, (i) -> i == 3, (i, s) -> false)),
+            Direction.EAST, LazyOptional.of(() ->
+                        // Don't extract from first/second slot just insert.
+                            new WrappedHandler(itemHandler, (index) -> false, (index, stack) -> itemHandler.isItemValid(0, stack) || itemHandler.isItemValid(1, stack))),
+            Direction.WEST, LazyOptional.of(() ->
+                        // Don't extract from first/second slot just insert.
+                            new WrappedHandler(itemHandler, (index) -> false, (index, stack) -> itemHandler.isItemValid(0, stack) || itemHandler.isItemValid(1, stack))));
+
+
 }

@@ -1,5 +1,4 @@
-package me.neo.forgedfactory.blocks.stone.alloykiln;
-
+package me.neo.forgedfactory.blocks.tiles.stone.bricksmasher;
 
 import me.neo.forgedfactory.setup.ModBlockEntities;
 import net.minecraft.core.BlockPos;
@@ -17,16 +16,14 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
-public class AlloyKiln extends BaseEntityBlock {
+public class BrickSmasher extends BaseEntityBlock {
     public static final DirectionProperty HORIZONTAL_FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final BooleanProperty LIT = BooleanProperty.create("lit");
-    public AlloyKiln(Properties properties) { super(properties); }
+    public BrickSmasher(Properties properties) { super(properties); }
 
     @Nullable
     @Override
@@ -47,9 +44,7 @@ public class AlloyKiln extends BaseEntityBlock {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(HORIZONTAL_FACING);
-        pBuilder.add(LIT);
     }
-
 
     @Override
     public Object getRenderPropertiesInternal() {
@@ -65,8 +60,8 @@ public class AlloyKiln extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity ent = pLevel.getBlockEntity(pPos);
-            if (ent instanceof AlloyKilnEnt) {
-                ((AlloyKilnEnt) ent).drops();
+            if (ent instanceof BrickSmasherEnt) {
+                ((BrickSmasherEnt) ent).drops();
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
@@ -76,8 +71,10 @@ public class AlloyKiln extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity ent = pLevel.getBlockEntity(pPos);
-            if (ent instanceof AlloyKilnEnt) {
-                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (AlloyKilnEnt)ent, pPos);
+            if (ent instanceof BrickSmasherEnt) {
+                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (BrickSmasherEnt) ent, pPos);
+            } else {
+                throw new IllegalStateException("Missing container Provider");
             }
         }
         return InteractionResult.sidedSuccess(pLevel.isClientSide());
@@ -86,15 +83,12 @@ public class AlloyKiln extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new AlloyKilnEnt(pPos, pState);
+        return new BrickSmasherEnt(pPos, pState);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.ALLOY_KILN.get(), AlloyKilnEnt::tick);
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.BRICK_SMASHER.get(), BrickSmasherEnt::tick);
     }
-
-
-
 }

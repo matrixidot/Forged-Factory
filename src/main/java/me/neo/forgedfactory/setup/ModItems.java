@@ -2,12 +2,12 @@ package me.neo.forgedfactory.setup;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.items.CreativeModTab;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FF.MOD_ID);
@@ -65,8 +65,24 @@ public class ModItems {
     public static final RegistryObject<Item> TUNGSTEN_PLATE = ITEMS.register("tungsten_plate", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
+    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> BRONZE_DUST = ITEMS.register("bronze_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+
+    public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> COPPER_PLATE = ITEMS.register("copper_plate", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
 }

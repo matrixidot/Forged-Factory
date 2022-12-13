@@ -1,6 +1,14 @@
-// 1.19.2	2022-12-03T17:28:46.008869	Tags for minecraft:block
+// 1.19.2	2022-12-10T21:45:29.837285	Tags for minecraft:block
 4aafadb26e4df6f5c9b4672acfb4e26247a51854 data/forge/tags/blocks/ores.json
-97ebd2b21568d48d7bffab5148663f38fdd2cd1c data/forge/tags/blocks/storage_blocks.json
-492b5776e85d53410f45529ac30715d32f1c670a data/minecraft/tags/blocks/mineable/pickaxe.json
+2ae76535c796a676b2e8241eb3d497ec168f5630 data/forge/tags/blocks/ores/tin.json
+b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/blocks/ores/titanium.json
+7138bdefaad8fdb85091145b145e28d178843c92 data/forge/tags/blocks/storage_blocks.json
+e4650cafd8ca0fbeadad45d978b1f2a0ed402bcf data/forge/tags/blocks/storage_blocks/bronze.json
+876ce5259044c1740b8ecd0a6d72329ea7d5f362 data/forge/tags/blocks/storage_blocks/hr_ogn.json
+e5bc8bcc432eb1a9a96453385cb4e66aedbc5795 data/forge/tags/blocks/storage_blocks/oganesson.json
+b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/blocks/storage_blocks/tin.json
+731736ae63d2c2561c6d087cf8bd138acc5b8671 data/forge/tags/blocks/storage_blocks/titanium.json
+4b221c1cd5c426ae0213b594e4761a52ba713866 data/forge/tags/blocks/storage_blocks/tungsten.json
+43e063797156763b3a7c39d07e939528a4d9837f data/minecraft/tags/blocks/mineable/pickaxe.json
 6090e644931b762fb5f7f43dc017c025f2159f28 data/minecraft/tags/blocks/needs_iron_tool.json
-b320a0a7546d740074186db21d5edb4feba8c3cc data/minecraft/tags/blocks/needs_stone_tool.json
+faa7dd588e2d1fb7fde5e0f74e9519e8fd560737 data/minecraft/tags/blocks/needs_stone_tool.json

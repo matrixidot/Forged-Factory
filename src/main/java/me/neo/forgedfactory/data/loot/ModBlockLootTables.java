@@ -27,7 +27,11 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
         this.dropSelf(ModBlocks.TUNGSTEN_BLOCK.get());
         this.dropSelf(ModBlocks.TIN_BLOCK.get());
+        this.dropSelf(ModBlocks.BRONZE_BLOCK.get());
+
         this.dropSelf(ModBlocks.ALLOY_KILN.get());
+        this.dropSelf(ModBlocks.BRICK_SMASHER.get());
+
     }
 
     @Override

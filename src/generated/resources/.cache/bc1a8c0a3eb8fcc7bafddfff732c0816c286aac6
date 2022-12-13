@@ -1,5 +1,14 @@
-// 1.19.2	2022-12-03T17:28:46.0078688	Item Models: forgedfactory
+// 1.19.2	2022-12-10T16:43:26.751398	Item Models: forgedfactory
 c73db8e0c12325faaf228d4ed6f65e326cce1113 assets/forgedfactory/models/item/alloy_kiln.json
+326200bc2c81665bc0a361f774e4f3b788085576 assets/forgedfactory/models/item/brick_smasher.json
+9886fe3c833cb33bce353a7a3fb7e2f022443d44 assets/forgedfactory/models/item/bronze_block.json
+ae9b80d46cb1a42d7bfa98e23503b8a0b5b7b25c assets/forgedfactory/models/item/bronze_dust.json
+a167fa3c7870ec85a545399a4a155b83eb01c2bd assets/forgedfactory/models/item/bronze_ingot.json
+e2505a1426d28ce751acc5175798b52e0da0bdad assets/forgedfactory/models/item/bronze_nugget.json
+6f2b3eb407a289886a792fdba853398c22771baa assets/forgedfactory/models/item/bronze_plate.json
+877fec627de1040e093377464dccd62e5fe086c0 assets/forgedfactory/models/item/copper_dust.json
+d920a03bb3a63415535d5004f03e4a61c4d1ecb6 assets/forgedfactory/models/item/copper_nugget.json
+aa1ac4221a36723904115ab4636c8dfe4071c2c2 assets/forgedfactory/models/item/copper_plate.json
 e35ac156901a017fb20fd9983a241399a46af422 assets/forgedfactory/models/item/deepslate_tin_ore.json
 d44af1be8dc8254464d045e8638ee2bd22edcac6 assets/forgedfactory/models/item/deepslate_titanium_ore.json
 bc2baef98eb1feb2f1a0fa591bf552cf7b86802e assets/forgedfactory/models/item/entangled_ingot.json

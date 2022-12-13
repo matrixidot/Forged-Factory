@@ -1,5 +1,7 @@
-// 1.19.2	2022-12-03T17:28:46.007369	Block States: forgedfactory
+// 1.19.2	2022-12-10T16:43:26.7518982	Block States: forgedfactory
 37f73da12bf1886c70636abcb50e883f9e01d297 assets/forgedfactory/blockstates/alloy_kiln.json
+8f0089faa4c980c533966f5112b75d7315df5a93 assets/forgedfactory/blockstates/brick_smasher.json
+1be6b05eb29c0902b3a3a8dc6b30ae15c9acba8e assets/forgedfactory/blockstates/bronze_block.json
 94bdd2b8d47fac3678ee18e03f199ae345d9cba1 assets/forgedfactory/blockstates/deepslate_tin_ore.json
 236efe7e540e28e830b26858533a3ea800329def assets/forgedfactory/blockstates/deepslate_titanium_ore.json
 e86e07d91fae7515c033b005d6215ce28f0adbc5 assets/forgedfactory/blockstates/hyper_radioactive_oganesson_block.json
@@ -9,6 +11,7 @@ bdecacfb3e4dd96fdf1a756eceac9ed73ae58e92 assets/forgedfactory/blockstates/tin_bl
 0dec2e834a0a4a14a674d4869badea0e10694c69 assets/forgedfactory/blockstates/titanium_block.json
 d8f0781fe0cd5a3263a86c83b87e9cf325d44795 assets/forgedfactory/blockstates/titanium_ore.json
 c34b8b158995170f4c8746f8da16cf5de2f7b099 assets/forgedfactory/blockstates/tungsten_block.json
+ba17b2d7db1b99a91a2dfcea7b0020b72b2abba2 assets/forgedfactory/models/block/bronze_block.json
 72329a4bde0314619872ac9e055d2d6aafb6845e assets/forgedfactory/models/block/deepslate_tin_ore.json
 b9827325e4c65dd8572c887d9660daa994d3edd3 assets/forgedfactory/models/block/deepslate_titanium_ore.json
 8943f9a5c26707e12e9a8d897cb9399680e9f193 assets/forgedfactory/models/block/hyper_radioactive_oganesson_block.json

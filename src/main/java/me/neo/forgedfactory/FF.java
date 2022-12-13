@@ -1,7 +1,8 @@
 package me.neo.forgedfactory;
 
 import com.mojang.logging.LogUtils;
-import me.neo.forgedfactory.blocks.stone.alloykiln.AlloyKilnScreen;
+import me.neo.forgedfactory.blocks.tiles.stone.alloykiln.AlloyKilnScreen;
+import me.neo.forgedfactory.blocks.tiles.stone.bricksmasher.BrickSmasherScreen;
 import me.neo.forgedfactory.recipe.ModRecipes;
 import me.neo.forgedfactory.setup.*;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -48,6 +49,7 @@ public class FF {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             MenuScreens.register(ModMenuTypes.ALLOY_KILN_MENU.get(), AlloyKilnScreen::new);
+            MenuScreens.register(ModMenuTypes.BRICK_SMASHER_MENU.get(), BrickSmasherScreen::new);
         }
     }
 }
