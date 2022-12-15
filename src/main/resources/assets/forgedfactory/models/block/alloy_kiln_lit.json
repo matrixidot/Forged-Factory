@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "forgedfactory:block/crude_chassis",
+		"down": "forgedfactory:block/crude_chassis",
+		"east": "forgedfactory:block/alloy_kiln_side",
+		"west": "forgedfactory:block/alloy_kiln_side",
+		"south": "forgedfactory:block/alloy_kiln_side",
+		"north": "forgedfactory:block/alloy_kiln_front_lit",
+		"particle": "forgedfactory:block/crude_chassis"
+	}
+}

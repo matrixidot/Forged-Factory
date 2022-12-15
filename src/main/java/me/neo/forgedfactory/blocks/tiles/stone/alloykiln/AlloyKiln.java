@@ -3,6 +3,7 @@ package me.neo.forgedfactory.blocks.tiles.stone.alloykiln;
 
 import me.neo.forgedfactory.setup.ModBlockEntities;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -26,7 +27,16 @@ import org.jetbrains.annotations.Nullable;
 public class AlloyKiln extends BaseEntityBlock {
     public static final DirectionProperty HORIZONTAL_FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty LIT = BooleanProperty.create("lit");
-    public AlloyKiln(Properties properties) { super(properties); }
+
+    public AlloyKiln(Properties properties) {
+        super(properties);
+
+        this.registerDefaultState(
+                this.stateDefinition.any()
+                        .setValue(LIT, false)
+                        .setValue(HORIZONTAL_FACING, Direction.NORTH)
+        );
+    }
 
     @Nullable
     @Override

@@ -38,7 +38,7 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
     // Important fields
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 10;
+    private int maxProgress = 100;
     private int burnTimeMax = 0;
     private int burnTime = 0;
 
@@ -173,6 +173,8 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
             if (entity.progress >= entity.maxProgress) {
                 craftItem(entity);
             }
+        } else if(entity.burnTime > 0) {
+            level.setBlock(pos, state.setValue(AlloyKiln.LIT, true), 2);
         } else {
             entity.resetProgress();
             level.setBlock(pos, state.setValue(AlloyKiln.LIT, false), 2);

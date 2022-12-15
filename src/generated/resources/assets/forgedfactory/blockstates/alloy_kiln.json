@@ -5,21 +5,21 @@
       "y": 90
     },
     "facing=east,lit=true": {
-      "model": "forgedfactory:block/alloy_kiln",
+      "model": "forgedfactory:block/alloy_kiln_lit",
       "y": 90
     },
     "facing=north,lit=false": {
       "model": "forgedfactory:block/alloy_kiln"
     },
     "facing=north,lit=true": {
-      "model": "forgedfactory:block/alloy_kiln"
+      "model": "forgedfactory:block/alloy_kiln_lit"
     },
     "facing=south,lit=false": {
       "model": "forgedfactory:block/alloy_kiln",
       "y": 180
     },
     "facing=south,lit=true": {
-      "model": "forgedfactory:block/alloy_kiln",
+      "model": "forgedfactory:block/alloy_kiln_lit",
       "y": 180
     },
     "facing=west,lit=false": {
@@ -27,7 +27,7 @@
       "y": 270
     },
     "facing=west,lit=true": {
-      "model": "forgedfactory:block/alloy_kiln",
+      "model": "forgedfactory:block/alloy_kiln_lit",
       "y": 270
     }
   }
