@@ -130,7 +130,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('P', ItemTagsFF.PLATES_TUNGSTEN).define('N', ItemTagsFF.NUGGETS_TUNGSTEN).define('G', ItemTagsFF.GEARS_TUNGSTEN).define('R', Items.REDSTONE)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_TUNGSTEN)).save(pFinishedRecipeConsumer, modId("tungsten_chassis"));
 
-        ShapedRecipeBuilder.shaped(ModItems.COPPER_PIPE.get(), 1).pattern("N N").pattern("III").pattern("N N")
+        ShapedRecipeBuilder.shaped(ModItems.COPPER_PIPE.get(), 6).pattern("N N").pattern("III").pattern("N N")
                 .define('N', ItemTagsFF.NUGGETS_COPPER).define('I', Items.COPPER_INGOT)
                 .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_pipe"));
 
