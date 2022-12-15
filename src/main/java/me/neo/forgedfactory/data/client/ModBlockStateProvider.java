@@ -25,6 +25,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.TITANIUM_ORE.get());
         simpleBlock(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
         simpleBlock(ModBlocks.BRONZE_BLOCK.get());
+        simpleBlock(ModBlocks.CRUDE_CHASSIS.get());
+        simpleBlock(ModBlocks.BRONZE_CHASSIS.get());
+        simpleBlock(ModBlocks.TIN_CHASSIS.get());
+        simpleBlock(ModBlocks.TITANIUM_CHASSIS.get());
+        simpleBlock(ModBlocks.TUNGSTEN_CHASSIS.get());
 
 
         horizontalBlock(ModBlocks.ALLOY_KILN.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));

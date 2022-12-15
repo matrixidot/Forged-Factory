@@ -49,6 +49,14 @@ public class ItemTagsFF {
     public static final TagKey<Item> STORAGE_BLOCKS_TITANIUM = forgeTag("storage_blocks/titanium");
     public static final TagKey<Item> STORAGE_BLOCKS_TUNGSTEN = forgeTag("storage_blocks/tungsten");
 
+    public static final TagKey<Item> GEARS = forgeTag("gears");
+
+    public static final TagKey<Item> GEARS_BRONZE = forgeTag("gears/bronze");
+    public static final TagKey<Item> GEARS_TIN = forgeTag("gears/tin");
+    public static final TagKey<Item> GEARS_COPPER = forgeTag("gears/copper");
+    public static final TagKey<Item> GEARS_TITANIUM = forgeTag("gears/titanium");
+    public static final TagKey<Item> GEARS_TUNGSTEN = forgeTag("gears/tungsten");
+
 
     public static final TagKey<Item> ORES_TIN = forgeTag("ores/tin");
     public static final TagKey<Item> ORES_TITANIUM = forgeTag("ores/titanium");

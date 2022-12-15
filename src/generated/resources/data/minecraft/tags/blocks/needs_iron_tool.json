@@ -5,6 +5,10 @@
     "forgedfactory:titanium_block",
     "forgedfactory:tungsten_block",
     "forgedfactory:titanium_ore",
+    "forgedfactory:tin_chassis",
+    "forgedfactory:bronze_chassis",
+    "forgedfactory:titanium_chassis",
+    "forgedfactory:tungsten_chassis",
     "forgedfactory:deepslate_titanium_ore"
   ]
 }

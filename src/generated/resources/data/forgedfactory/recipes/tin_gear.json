@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/tin"
+    },
+    "N": {
+      "tag": "forge:nuggets/tin"
+    }
+  },
+  "pattern": [
+    " N ",
+    "NIN",
+    " N "
+  ],
+  "result": {
+    "item": "forgedfactory:tin_gear"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/bronze"
+    },
+    "N": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "pattern": [
+    " N ",
+    "NIN",
+    " N "
+  ],
+  "result": {
+    "item": "forgedfactory:bronze_gear"
+  }
+}

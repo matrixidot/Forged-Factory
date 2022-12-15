@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "forgedfactory:crude_chassis"
+    },
+    "N": {
+      "tag": "forge:nuggets/copper"
+    },
+    "P": {
+      "item": "forgedfactory:copper_pipe"
+    },
+    "R": {
+      "item": "forgedfactory:pebble"
+    }
+  },
+  "pattern": [
+    "RNR",
+    "PCP",
+    "RNR"
+  ],
+  "result": {
+    "item": "forgedfactory:alloy_kiln"
+  }
+}

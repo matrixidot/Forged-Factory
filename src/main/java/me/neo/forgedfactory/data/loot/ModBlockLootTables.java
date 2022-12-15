@@ -29,6 +29,12 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.TIN_BLOCK.get());
         this.dropSelf(ModBlocks.BRONZE_BLOCK.get());
 
+        this.dropSelf(ModBlocks.CRUDE_CHASSIS.get());
+        this.dropSelf(ModBlocks.BRONZE_CHASSIS.get());
+        this.dropSelf(ModBlocks.TIN_CHASSIS.get());
+        this.dropSelf(ModBlocks.TITANIUM_CHASSIS.get());
+        this.dropSelf(ModBlocks.TUNGSTEN_CHASSIS.get());
+
         this.dropSelf(ModBlocks.ALLOY_KILN.get());
         this.dropSelf(ModBlocks.BRICK_SMASHER.get());
 

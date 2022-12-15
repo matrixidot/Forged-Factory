@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-10T21:48:29.339946	Tags for minecraft:item
+// 1.19.2	2022-12-14T18:54:44.4986537	Tags for minecraft:item
 94ca4512e48993201af456b6e6c66ac79af3521b data/forge/tags/items/dusts/bronze.json
 2e61c1082c472aafed1e04320214c0dc1f563687 data/forge/tags/items/dusts/copper.json
 a9bb46d59dfa38c42b4b5f3c6923dbd0ce22df13 data/forge/tags/items/dusts/hr_ogn.json
@@ -6,6 +6,12 @@ ac8b65946b2d9cf4837d5a95e97b30b1d2e59dc7 data/forge/tags/items/dusts/oganesson.j
 35002c06def42216a372b94982e5d10dd3195767 data/forge/tags/items/dusts/tin.json
 d849f1fc2dfb7ef53969b2201a09f69975bad350 data/forge/tags/items/dusts/titanium.json
 23848b40dea0a8448fa97dc0b0f7e1eff641ca8f data/forge/tags/items/dusts/tungsten.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/items/gears.json
+9b4e5622ae3960a507a9e00ccab36c66320498a2 data/forge/tags/items/gears/bronze.json
+1fcfbde2831c62c53209d3eaa8947edf88ca97f3 data/forge/tags/items/gears/copper.json
+80cb82ccf044aa01232b11453e813d627e7d989f data/forge/tags/items/gears/tin.json
+ed68be94c2ffa6c9914028cb7923dcfe2c0450b8 data/forge/tags/items/gears/titanium.json
+13c3c2b6bb65973c004a1ef2aa8740aec47b6fd8 data/forge/tags/items/gears/tungsten.json
 18e83711aec45470673dd7a50d79fd7fcf310f32 data/forge/tags/items/ingots.json
 617b8912e8803051ccba83e8ddf3c14ac750df56 data/forge/tags/items/ingots/bronze.json
 c80b43d112feceefcf51ac9121cdd698e96a3170 data/forge/tags/items/ingots/entangled.json

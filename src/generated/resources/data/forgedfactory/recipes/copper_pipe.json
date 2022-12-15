@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "N": {
+      "tag": "forge:nuggets/copper"
+    }
+  },
+  "pattern": [
+    "N N",
+    "III",
+    "N N"
+  ],
+  "result": {
+    "item": "forgedfactory:copper_pipe"
+  }
+}

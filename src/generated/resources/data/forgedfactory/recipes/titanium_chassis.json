@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "tag": "forge:gears/titanium"
+    },
+    "N": {
+      "tag": "forge:nuggets/titanium"
+    },
+    "P": {
+      "tag": "forge:plates/titanium"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "PNP",
+    "RGR",
+    "PNP"
+  ],
+  "result": {
+    "item": "forgedfactory:titanium_chassis"
+  }
+}

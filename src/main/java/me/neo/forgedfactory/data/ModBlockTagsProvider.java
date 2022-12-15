@@ -9,6 +9,7 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 public class ModBlockTagsProvider extends BlockTagsProvider {
@@ -37,6 +38,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.TIN_CHASSIS.get())
+                .add(ModBlocks.BRONZE_CHASSIS.get())
+                .add(ModBlocks.TITANIUM_CHASSIS.get())
+                .add(ModBlocks.TUNGSTEN_CHASSIS.get())
                 .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get());
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.TIN_BLOCK.get())
@@ -44,6 +49,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.BRONZE_BLOCK.get())
                 .add(ModBlocks.BRICK_SMASHER.get())
+                .add(ModBlocks.CRUDE_CHASSIS.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
@@ -67,5 +73,12 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTagsFF.STORAGE_BLOCKS_OGANESSON).add(ModBlocks.OGANESSON_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_TITANIUM).add(ModBlocks.TITANIUM_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_TUNGSTEN).add(ModBlocks.TUNGSTEN_BLOCK.get());
+
+        tag(BlockTagsFF.CHASSIS);
+        tag(BlockTagsFF.CHASSIS_CRUDE).add(ModBlocks.CRUDE_CHASSIS.get());
+        tag(BlockTagsFF.CHASSIS_BRONZE).add(ModBlocks.BRONZE_CHASSIS.get());
+        tag(BlockTagsFF.CHASSIS_TIN).add(ModBlocks.TIN_CHASSIS.get());
+        tag(BlockTagsFF.CHASSIS_TITANIUM).add(ModBlocks.TITANIUM_CHASSIS.get());
+        tag(BlockTagsFF.CHASSIS_TUNGSTEN).add(ModBlocks.TUNGSTEN_CHASSIS.get());
     }
 }

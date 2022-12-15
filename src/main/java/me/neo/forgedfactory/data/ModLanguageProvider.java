@@ -33,26 +33,36 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.TITANIUM_DUST.get(), "Titanium Dust");
         add(ModItems.TITANIUM_PLATE.get(), "Titanium Plate");
         add(ModItems.RAW_TITANIUM.get(), "Raw Titanium");
+        add(ModItems.TITANIUM_GEAR.get(), "Titanium Gear");
+
 
         add(ModItems.TUNGSTEN_INGOT.get(), "Tungsten Ingot");
         add(ModItems.TUNGSTEN_NUGGET.get(), "Tungsten Nugget");
         add(ModItems.TUNGSTEN_DUST.get(), "Tungsten Dust");
         add(ModItems.TUNGSTEN_PLATE.get(), "Tungsten Plate");
+        add(ModItems.TUNGSTEN_GEAR.get(), "Tungsten Gear");
+
 
         add(ModItems.BRONZE_INGOT.get(), "Bronze Ingot");
         add(ModItems.BRONZE_NUGGET.get(), "Bronze Nugget");
         add(ModItems.BRONZE_DUST.get(), "Bronze Dust");
         add(ModItems.BRONZE_PLATE.get(), "Bronze Plate");
+        add(ModItems.BRONZE_GEAR.get(), "Bronze Gear");
+
 
         add(ModItems.COPPER_NUGGET.get(), "Copper Nugget");
         add(ModItems.COPPER_DUST.get(), "Copper Dust");
         add(ModItems.COPPER_PLATE.get(), "Copper Plate");
+        add(ModItems.COPPER_GEAR.get(), "Copper Gear");
+        add(ModItems.COPPER_PIPE.get(), "Copper Pipe");
 
         add(ModItems.TIN_INGOT.get(), "Tin Ingot");
         add(ModItems.TIN_NUGGET.get(), "Tin Nugget");
         add(ModItems.TIN_DUST.get(), "Tin Dust");
         add(ModItems.TIN_PLATE.get(), "Tin Plate");
         add(ModItems.RAW_TIN.get(), "Raw Tin");
+        add(ModItems.TIN_GEAR.get(), "Tin Gear");
+
 
         // Storage Blocks
         add(ModBlocks.OGANESSON_BLOCK.get(), "Block of Oganesson");
@@ -67,6 +77,14 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.DEEPSLATE_TIN_ORE.get(), "Deepslate Tin Ore");
         add(ModBlocks.TITANIUM_ORE.get(), "Titanium Ore");
         add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(), "Deepslate Titanium Ore");
+
+        // Misc
+        add(ModBlocks.CRUDE_CHASSIS.get(), "Crude Machine Chassis");
+        add(ModBlocks.TIN_CHASSIS.get(), "Tin Machine Chassis");
+        add(ModBlocks.BRONZE_CHASSIS.get(), "Bronze Machine Chassis");
+        add(ModBlocks.TUNGSTEN_CHASSIS.get(), "Tungsten Machine Chassis");
+        add(ModBlocks.TITANIUM_CHASSIS.get(), "Titanium Machine Chassis");
+        add(ModItems.PEBBLE.get(), "Pebble");
 
         // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");

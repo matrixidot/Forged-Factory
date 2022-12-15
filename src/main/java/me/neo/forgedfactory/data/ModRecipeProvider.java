@@ -3,9 +3,12 @@ package me.neo.forgedfactory.data;
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.setup.ModBlocks;
 import me.neo.forgedfactory.setup.ModItems;
+import me.neo.forgedfactory.util.BlockTagsFF;
+import me.neo.forgedfactory.util.ItemTagsFF;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
@@ -54,6 +57,11 @@ public class ModRecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(ModItems.COPPER_NUGGET.get(), 9).requires(Items.COPPER_INGOT)
                 .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_i2n"));
 
+        ShapelessRecipeBuilder.shapeless(ModItems.PEBBLE.get(), 4).requires(Items.COBBLESTONE)
+                .unlockedBy("has_item", has(Items.COBBLESTONE)).save(pFinishedRecipeConsumer, modId("cobble_b2i"));
+        ShapelessRecipeBuilder.shapeless(Items.COBBLESTONE, 1).requires(ModItems.PEBBLE.get(), 4)
+                .unlockedBy("has_item", has(Items.COBBLESTONE)).save(pFinishedRecipeConsumer, modId("cobble_i2b"));
+
 
         /* SHAPED RECIPES */
 
@@ -92,6 +100,45 @@ public class ModRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(Items.COPPER_INGOT, 1).pattern("###").pattern("###").pattern("###").define('#', ModItems.COPPER_NUGGET.get())
                 .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_n2i"));
 
+        ShapedRecipeBuilder.shaped(ModItems.COPPER_GEAR.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.NUGGETS_COPPER)
+                .define('I', Items.COPPER_INGOT).unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_gear"));
+        ShapedRecipeBuilder.shaped(ModItems.TIN_GEAR.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.NUGGETS_TIN)
+                .define('I', ItemTagsFF.INGOTS_TIN).unlockedBy("has_item", has(ItemTagsFF.INGOTS_TIN)).save(pFinishedRecipeConsumer, modId("tin_gear"));
+        ShapedRecipeBuilder.shaped(ModItems.BRONZE_GEAR.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.NUGGETS_BRONZE)
+                .define('I', ItemTagsFF.INGOTS_BRONZE)
+                .unlockedBy("has_item", has(ItemTagsFF.INGOTS_BRONZE)).save(pFinishedRecipeConsumer, modId("bronze_gear"));
+        ShapedRecipeBuilder.shaped(ModItems.TITANIUM_GEAR.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.NUGGETS_TITANIUM)
+                .define('I', ItemTagsFF.INGOTS_TITANIUM)
+                .unlockedBy("has_item", has(ItemTagsFF.INGOTS_TITANIUM)).save(pFinishedRecipeConsumer, modId("titanium_gear"));
+        ShapedRecipeBuilder.shaped(ModItems.TUNGSTEN_GEAR.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.NUGGETS_TUNGSTEN)
+                .define('I', ItemTagsFF.INGOTS_TUNGSTEN)
+                .unlockedBy("has_item", has(ItemTagsFF.INGOTS_TUNGSTEN)).save(pFinishedRecipeConsumer, modId("tungsten_gear"));
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CRUDE_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
+                .define('P', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('G', ItemTagsFF.GEARS_COPPER).define('R', Items.REDSTONE)
+                .unlockedBy("has_item", has(ItemTagsFF.GEARS_COPPER)).save(pFinishedRecipeConsumer, modId("crude_chassis"));
+        ShapedRecipeBuilder.shaped(ModBlocks.TIN_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_TIN).define('N', ItemTagsFF.NUGGETS_TIN).define('G', ItemTagsFF.GEARS_TIN).define('R', Items.REDSTONE)
+                .unlockedBy("has_item", has(ItemTagsFF.GEARS_TIN)).save(pFinishedRecipeConsumer, modId("tin_chassis"));
+        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_BRONZE).define('N', ItemTagsFF.NUGGETS_BRONZE).define('G', ItemTagsFF.GEARS_BRONZE).define('R', Items.REDSTONE)
+                .unlockedBy("has_item", has(ItemTagsFF.GEARS_BRONZE)).save(pFinishedRecipeConsumer, modId("bronze_chassis"));
+        ShapedRecipeBuilder.shaped(ModBlocks.TITANIUM_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_TITANIUM).define('N', ItemTagsFF.NUGGETS_TITANIUM).define('G', ItemTagsFF.GEARS_TITANIUM).define('R', Items.REDSTONE)
+                .unlockedBy("has_item", has(ItemTagsFF.GEARS_TITANIUM)).save(pFinishedRecipeConsumer, modId("titanium_chassis"));
+        ShapedRecipeBuilder.shaped(ModBlocks.TUNGSTEN_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_TUNGSTEN).define('N', ItemTagsFF.NUGGETS_TUNGSTEN).define('G', ItemTagsFF.GEARS_TUNGSTEN).define('R', Items.REDSTONE)
+                .unlockedBy("has_item", has(ItemTagsFF.GEARS_TUNGSTEN)).save(pFinishedRecipeConsumer, modId("tungsten_chassis"));
+
+        ShapedRecipeBuilder.shaped(ModItems.COPPER_PIPE.get(), 1).pattern("N N").pattern("III").pattern("N N")
+                .define('N', ItemTagsFF.NUGGETS_COPPER).define('I', Items.COPPER_INGOT)
+                .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_pipe"));
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ALLOY_KILN.get(), 1).pattern("RNR").pattern("PCP").pattern("RNR")
+                .define('R', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('C', ModBlocks.CRUDE_CHASSIS.get()).define('P', ModItems.COPPER_PIPE.get())
+                .unlockedBy("has_item", has(ModBlocks.CRUDE_CHASSIS.get())).save(pFinishedRecipeConsumer, modId("alloy_kiln_recipe"));
+        
+        
         /* PROCESSING RECIPES */
         // Smelting
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.TIN_ORE.get()), ModItems.TIN_INGOT.get(), .7F, 200)

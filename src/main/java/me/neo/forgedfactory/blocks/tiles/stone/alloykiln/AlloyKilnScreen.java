@@ -45,13 +45,22 @@ public class AlloyKilnScreen extends AbstractContainerScreen<AlloyKilnMenu> {
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
         if(menu.isCrafting()) {
             // Stack, pos x, pos y, filled texture x, filled texture y, something, something
-            blit(pPoseStack, x + 106, y + 37, 176, 14, menu.getScaledProgress(), 17);
+            blit(pPoseStack, x + 101, y + 24, 176, 14, menu.getScaledProgress(), 16);
+            blit(pPoseStack, x + 57, y + 21, 176, 30, 9, 9);
         }
     }
     private void renderHeatFlame(PoseStack stack, int x, int y) {
         if(menu.isBurning()) {
-            blit(stack, x + 9, y + 41 + 12 - menu.getBurnProgress(), 176, 12 - menu.getBurnProgress(), 14, menu.getBurnProgress() + 1);
+            blit(stack, x + 55, y + 42 + 12 - menu.getBurnProgress(), 176, 12 - menu.getBurnProgress(), 14, menu.getBurnProgress() + 1);
+
+            blit(stack, x + 35, y + 59, 176, 41, 17, 10);
+            blit(stack, x + 72, y + 59, 176, 51, 17, 10);
+
+            blit(stack, x + 83, y + 42, 176, 62, 8, 16);
+            blit(stack, x + 34, y + 42, 176, 62, 8, 16);
         }
+
+
 
     }
     @Override

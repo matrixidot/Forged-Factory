@@ -43,6 +43,8 @@ public class ModItems {
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> RAW_TITANIUM = ITEMS.register("raw_titanium", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> TITANIUM_GEAR = ITEMS.register("titanium_gear", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
@@ -54,6 +56,8 @@ public class ModItems {
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> TIN_GEAR = ITEMS.register("tin_gear", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
 
     public static final RegistryObject<Item> TUNGSTEN_INGOT = ITEMS.register("tungsten_ingot", () ->
@@ -64,6 +68,8 @@ public class ModItems {
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> TUNGSTEN_PLATE = ITEMS.register("tungsten_plate", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> TUNGSTEN_GEAR = ITEMS.register("tungsten_gear", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
@@ -73,12 +79,22 @@ public class ModItems {
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> COPPER_PLATE = ITEMS.register("copper_plate", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> COPPER_GEAR = ITEMS.register("copper_gear", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> COPPER_PIPE = ITEMS.register("copper_pipe", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+
+
+    public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static void register(IEventBus eventBus) {

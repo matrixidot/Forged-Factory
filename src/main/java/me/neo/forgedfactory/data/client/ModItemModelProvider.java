@@ -26,6 +26,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("bronze_block", modLoc("block/bronze_block"));
         withExistingParent("alloy_kiln", modLoc("block/alloy_kiln"));
         withExistingParent("brick_smasher", modLoc("block/brick_smasher"));
+        withExistingParent("crude_chassis", modLoc("block/crude_chassis"));
+        withExistingParent("tin_chassis", modLoc("block/tin_chassis"));
+        withExistingParent("bronze_chassis", modLoc("block/bronze_chassis"));
+        withExistingParent("titanium_chassis", modLoc("block/titanium_chassis"));
+        withExistingParent("tungsten_chassis", modLoc("block/tungsten_chassis"));
+
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemGenerated, "entangled_ingot");
@@ -42,22 +48,31 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "titanium_dust");
         builder(itemGenerated, "titanium_plate");
         builder(itemGenerated, "raw_titanium");
+        builder(itemGenerated, "titanium_gear");
         builder(itemGenerated, "tungsten_ingot");
         builder(itemGenerated, "tungsten_nugget");
         builder(itemGenerated, "tungsten_dust");
         builder(itemGenerated, "tungsten_plate");
+        builder(itemGenerated, "tungsten_gear");
         builder(itemGenerated, "tin_ingot");
         builder(itemGenerated, "tin_nugget");
         builder(itemGenerated, "tin_dust");
         builder(itemGenerated, "tin_plate");
         builder(itemGenerated, "raw_tin");
+        builder(itemGenerated, "tin_gear");
         builder(itemGenerated, "bronze_ingot");
         builder(itemGenerated, "bronze_nugget");
         builder(itemGenerated, "bronze_dust");
         builder(itemGenerated, "bronze_plate");
+        builder(itemGenerated, "bronze_gear");
         builder(itemGenerated, "copper_nugget");
         builder(itemGenerated, "copper_dust");
         builder(itemGenerated, "copper_plate");
+        builder(itemGenerated, "copper_gear");
+        builder(itemGenerated, "copper_pipe");
+
+
+        builder(itemGenerated, "pebble");
 
 
     }
