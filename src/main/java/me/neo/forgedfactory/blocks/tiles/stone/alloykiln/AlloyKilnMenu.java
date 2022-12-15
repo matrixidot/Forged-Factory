@@ -33,7 +33,7 @@ public class AlloyKilnMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(handler, 0, 27,18));
             this.addSlot(new SlotItemHandler(handler, 1, 80, 18));
             this.addSlot(new SlotItemHandler(handler, 2, 54, 58));
-            this.addSlot(new SlotItemHandler(handler, 3, 138, 51));
+            this.addSlot(new SlotItemHandler(handler, 3, 138, 49));
         });
         addDataSlots(data);
     }
