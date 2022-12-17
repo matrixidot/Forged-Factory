@@ -114,14 +114,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('I', ItemTagsFF.INGOTS_TUNGSTEN)
                 .unlockedBy("has_item", has(ItemTagsFF.INGOTS_TUNGSTEN)).save(pFinishedRecipeConsumer, modId("tungsten_gear"));
 
-        ShapedRecipeBuilder.shaped(ModBlocks.CRUDE_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
-                .define('P', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('G', ItemTagsFF.GEARS_COPPER).define('R', Items.REDSTONE)
+        ShapedRecipeBuilder.shaped(ModBlocks.CRUDE_CHASSIS.get(), 1).pattern("PNP").pattern("AGA").pattern("PNP")
+                .define('P', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('G', ItemTagsFF.GEARS_COPPER).define('A', Items.AMETHYST_SHARD)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_COPPER)).save(pFinishedRecipeConsumer, modId("crude_chassis"));
         ShapedRecipeBuilder.shaped(ModBlocks.TIN_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
                 .define('P', ItemTagsFF.PLATES_TIN).define('N', ItemTagsFF.NUGGETS_TIN).define('G', ItemTagsFF.GEARS_TIN).define('R', Items.REDSTONE)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_TIN)).save(pFinishedRecipeConsumer, modId("tin_chassis"));
-        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
-                .define('P', ItemTagsFF.PLATES_BRONZE).define('N', ItemTagsFF.NUGGETS_BRONZE).define('G', ItemTagsFF.GEARS_BRONZE).define('R', Items.REDSTONE)
+        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_CHASSIS.get(), 1).pattern("PNP").pattern("AGA").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_BRONZE).define('N', ItemTagsFF.NUGGETS_BRONZE).define('G', ItemTagsFF.GEARS_BRONZE).define('A', Items.AMETHYST_SHARD)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_BRONZE)).save(pFinishedRecipeConsumer, modId("bronze_chassis"));
         ShapedRecipeBuilder.shaped(ModBlocks.TITANIUM_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
                 .define('P', ItemTagsFF.PLATES_TITANIUM).define('N', ItemTagsFF.NUGGETS_TITANIUM).define('G', ItemTagsFF.GEARS_TITANIUM).define('R', Items.REDSTONE)

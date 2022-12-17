@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-15T07:32:05.1826986	Recipes
+// 1.19.2	2022-12-16T18:24:29.9675671	Recipes
 93ac52babd2a16960669604806ace0af4a6e0fac data/forgedfactory/advancements/recipes/building_blocks/cobble_i2b.json
 246cef8048a96ce9a3c28e6d58d26fcda6e3d3cc data/forgedfactory/advancements/recipes/fftab/alloy_kiln_recipe.json
 27aca8e6399d99c0d08686bed2a97dfc727ccf48 data/forgedfactory/advancements/recipes/fftab/bronze_b2i.json
@@ -63,7 +63,7 @@ a8e626cd9e6337cda757ed87706e6095a8ae23fd data/forgedfactory/advancements/recipes
 40905ab8099badf630dfb86d5732be5b117e10c7 data/forgedfactory/advancements/recipes/misc/copper_n2i.json
 cdf26c74b9f6a89c17622e27e689778654e95630 data/forgedfactory/recipes/alloy_kiln_recipe.json
 0d350ca0cf30b27423bd04de349ea513a6104d57 data/forgedfactory/recipes/bronze_b2i.json
-0050bfd0fca70a254cd80ea858546e3523834b04 data/forgedfactory/recipes/bronze_chassis.json
+226a46136d536abfe8ce7f0022b461c26ab76674 data/forgedfactory/recipes/bronze_chassis.json
 881f3713c7f7248c0dd49ab487a9a6c5d69794ca data/forgedfactory/recipes/bronze_gear.json
 86ac5b6b1472c6dd234f5bee628ebe927452f4eb data/forgedfactory/recipes/bronze_i2b.json
 b5d6d953cb7a289e8bd1bd2b4bf6ce2958043646 data/forgedfactory/recipes/bronze_i2n.json
@@ -74,7 +74,7 @@ b5d6d953cb7a289e8bd1bd2b4bf6ce2958043646 data/forgedfactory/recipes/bronze_i2n.j
 a87ffa2131ceaddc9e244d952049f5d85be0baed data/forgedfactory/recipes/copper_i2n.json
 ffa72cba09da86c24a0992b0adbc30e8312eae81 data/forgedfactory/recipes/copper_n2i.json
 162af149c522ea7860f8222e8f7b9f87d6e3764d data/forgedfactory/recipes/copper_pipe.json
-4ca678f65e891989be728e986fd635260c620fc7 data/forgedfactory/recipes/crude_chassis.json
+d9c273e52c7800ac91fb35ea8080a337f298fe5a data/forgedfactory/recipes/crude_chassis.json
 cd6588def93fbfe78b4c514ddb6e32b72868e0e4 data/forgedfactory/recipes/d2i_hr_ogn_blast.json
 d7d8f07fa8a813e822e22c3aaa918bca52714093 data/forgedfactory/recipes/d2i_hr_ogn_smelt.json
 29ad32ae6e5b2279bbc541f54ee3bb7f4f6979de data/forgedfactory/recipes/d2i_oganesson_blast.json

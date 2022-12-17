@@ -1,6 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
     "G": {
       "tag": "forge:gears/copper"
     },
@@ -9,14 +12,11 @@
     },
     "P": {
       "item": "forgedfactory:pebble"
-    },
-    "R": {
-      "item": "minecraft:redstone"
     }
   },
   "pattern": [
     "PNP",
-    "RGR",
+    "AGA",
     "PNP"
   ],
   "result": {
