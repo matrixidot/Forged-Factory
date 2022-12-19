@@ -15,6 +15,7 @@ public class ItemTagsFF {
     public static final TagKey<Item> NUGGETS_COPPER = forgeTag("nuggets/copper");
     public static final TagKey<Item> NUGGETS_TITANIUM = forgeTag("nuggets/titanium");
     public static final TagKey<Item> NUGGETS_TUNGSTEN = forgeTag("nuggets/tungsten");
+    public static final TagKey<Item> NUGGETS_STEEL = forgeTag("nuggets/steel");
 
     public static final TagKey<Item> PLATES = forgeTag("plates");
 
@@ -25,6 +26,8 @@ public class ItemTagsFF {
     public static final TagKey<Item> PLATES_TIN = forgeTag("plates/tin");
     public static final TagKey<Item> PLATES_TITANIUM = forgeTag("plates/titanium");
     public static final TagKey<Item> PLATES_TUNGSTEN = forgeTag("plates/tungsten");
+    public static final TagKey<Item> PLATES_IRON = forgeTag("plates/iron");
+    public static final TagKey<Item> PLATES_STEEL = forgeTag("plates/steel");
 
     public static final TagKey<Item> INGOTS_BRONZE = forgeTag("ingots/bronze");
     public static final TagKey<Item> INGOTS_ENTANGLED = forgeTag("ingots/entangled");
@@ -33,6 +36,7 @@ public class ItemTagsFF {
     public static final TagKey<Item> INGOTS_TIN = forgeTag("ingots/tin");
     public static final TagKey<Item> INGOTS_TITANIUM = forgeTag("ingots/titanium");
     public static final TagKey<Item> INGOTS_TUNGSTEN = forgeTag("ingots/tungsten");
+    public static final TagKey<Item> INGOTS_STEEL = forgeTag("ingots/steel");
 
     public static final TagKey<Item> DUSTS_BRONZE = forgeTag("dusts/bronze");
     public static final TagKey<Item> DUSTS_COPPER = forgeTag("dusts/copper");
@@ -41,6 +45,11 @@ public class ItemTagsFF {
     public static final TagKey<Item> DUSTS_TIN = forgeTag("dusts/tin");
     public static final TagKey<Item> DUSTS_TITANIUM = forgeTag("dusts/titanium");
     public static final TagKey<Item> DUSTS_TUNGSTEN = forgeTag("dusts/tungsten");
+    public static final TagKey<Item> DUSTS_STEEL = forgeTag("dusts/steel");
+    public static final TagKey<Item> DUSTS_IRON = forgeTag("dusts/iron");
+    public static final TagKey<Item> DUSTS_AMETHYST = forgeTag("dusts/amethyst");
+    public static final TagKey<Item> DUSTS_DIAMOND = forgeTag("dusts/diamond");
+    public static final TagKey<Item> DUSTS_EMERALD = forgeTag("dusts/emerald");
 
     public static final TagKey<Item> STORAGE_BLOCKS_BRONZE = forgeTag("storage_blocks/bronze");
     public static final TagKey<Item> STORAGE_BLOCKS_HR_OGN = forgeTag("storage_blocks/hr_ogn");
@@ -48,6 +57,7 @@ public class ItemTagsFF {
     public static final TagKey<Item> STORAGE_BLOCKS_TIN = forgeTag("storage_blocks/tin");
     public static final TagKey<Item> STORAGE_BLOCKS_TITANIUM = forgeTag("storage_blocks/titanium");
     public static final TagKey<Item> STORAGE_BLOCKS_TUNGSTEN = forgeTag("storage_blocks/tungsten");
+    public static final TagKey<Item> STORAGE_BLOCKS_STEEL = forgeTag("storage_blocks/steel");
 
     public static final TagKey<Item> GEARS = forgeTag("gears");
 

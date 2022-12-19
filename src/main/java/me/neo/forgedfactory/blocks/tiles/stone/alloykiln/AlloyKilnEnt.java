@@ -175,6 +175,7 @@ public class AlloyKilnEnt extends BlockEntity implements MenuProvider {
             }
         } else if(entity.burnTime > 0) {
             level.setBlock(pos, state.setValue(AlloyKiln.LIT, true), 2);
+            entity.resetProgress();
         } else {
             entity.resetProgress();
             level.setBlock(pos, state.setValue(AlloyKiln.LIT, false), 2);

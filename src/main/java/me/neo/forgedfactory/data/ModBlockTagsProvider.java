@@ -38,7 +38,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_ORE.get())
-                .add(ModBlocks.TIN_CHASSIS.get())
+                .add(ModBlocks.STEEL_CHASSIS.get())
+                .add(ModBlocks.STEEL_BLOCK.get())
                 .add(ModBlocks.BRONZE_CHASSIS.get())
                 .add(ModBlocks.TITANIUM_CHASSIS.get())
                 .add(ModBlocks.TUNGSTEN_CHASSIS.get())
@@ -57,6 +58,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.BRONZE_BLOCK.get())
+                .add(ModBlocks.STEEL_BLOCK.get())
                 .add(ModBlocks.TIN_BLOCK.get());
         tag(Tags.Blocks.ORES)
                 .add(ModBlocks.TIN_ORE.get())
@@ -77,7 +79,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTagsFF.CHASSIS);
         tag(BlockTagsFF.CHASSIS_CRUDE).add(ModBlocks.CRUDE_CHASSIS.get());
         tag(BlockTagsFF.CHASSIS_BRONZE).add(ModBlocks.BRONZE_CHASSIS.get());
-        tag(BlockTagsFF.CHASSIS_TIN).add(ModBlocks.TIN_CHASSIS.get());
+        tag(BlockTagsFF.CHASSIS_STEEL).add(ModBlocks.STEEL_CHASSIS.get());
         tag(BlockTagsFF.CHASSIS_TITANIUM).add(ModBlocks.TITANIUM_CHASSIS.get());
         tag(BlockTagsFF.CHASSIS_TUNGSTEN).add(ModBlocks.TUNGSTEN_CHASSIS.get());
     }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "tag": "forge:nuggets/bronze"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "tag": "forge:ingots/tin"
+    }
+  },
+  "pattern": [
+    " TS",
+    " NT",
+    "S  "
+  ],
+  "result": {
+    "item": "forgedfactory:machinist_hammer"
+  }
+}

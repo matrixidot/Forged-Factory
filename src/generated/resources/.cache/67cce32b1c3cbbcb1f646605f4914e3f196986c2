@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-14T18:54:44.5011541	LootTables
+// 1.19.2	2022-12-19T15:35:37.3029789	LootTables
 00e573e79eb8933f1c23c4b345f2ad4cf3c89fe8 data/forgedfactory/loot_tables/blocks/alloy_kiln.json
 ff7fbb79696cfee65caed9269b477956c130c99b data/forgedfactory/loot_tables/blocks/brick_smasher.json
 6ec56d8100764c6b85a33092547f9e2f99350197 data/forgedfactory/loot_tables/blocks/bronze_block.json
@@ -8,8 +8,9 @@ c57bc89a8efa7f55e195d6453b25473e3e25104a data/forgedfactory/loot_tables/blocks/d
 098c3967b0dd1a3173c8c1e76b3f53efa3fd53ac data/forgedfactory/loot_tables/blocks/deepslate_titanium_ore.json
 fd4740f1dcee4f18607409e320bb35cca0f26141 data/forgedfactory/loot_tables/blocks/hyper_radioactive_oganesson_block.json
 1efc3c38dfb90dc32a0ba25de7ff2fe2060e6dff data/forgedfactory/loot_tables/blocks/oganesson_block.json
+0c116a2c20ae76c89045f325b44693dc9643d3e0 data/forgedfactory/loot_tables/blocks/steel_block.json
+c53438e0555bb0e19f7c087ce72cb0f60e8458f1 data/forgedfactory/loot_tables/blocks/steel_chassis.json
 0464a4edae6e1e9e757dec62955b757ea735f829 data/forgedfactory/loot_tables/blocks/tin_block.json
-55af3038605314a7c2b8c8e4dd8783a98671a3ed data/forgedfactory/loot_tables/blocks/tin_chassis.json
 1982a2b72fa734878b3b53e938acd20cfb3ef3b5 data/forgedfactory/loot_tables/blocks/tin_ore.json
 80cf6395137b9a736710c08b0e855a4298cb1fbf data/forgedfactory/loot_tables/blocks/titanium_block.json
 0cc48d43901e673e5d57372f7c64d91a4cbdeaf4 data/forgedfactory/loot_tables/blocks/titanium_chassis.json

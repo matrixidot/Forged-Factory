@@ -49,6 +49,11 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.BRONZE_PLATE.get(), "Bronze Plate");
         add(ModItems.BRONZE_GEAR.get(), "Bronze Gear");
 
+        add(ModItems.STEEL_INGOT.get(), "Steel Ingot");
+        add(ModItems.STEEL_NUGGET.get(), "Steel Nugget");
+        add(ModItems.STEEL_DUST.get(), "Steel Dust");
+        add(ModItems.STEEL_PLATE.get(), "Steel Plate");
+
 
         add(ModItems.COPPER_NUGGET.get(), "Copper Nugget");
         add(ModItems.COPPER_DUST.get(), "Copper Dust");
@@ -63,6 +68,10 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.RAW_TIN.get(), "Raw Tin");
         add(ModItems.TIN_GEAR.get(), "Tin Gear");
 
+        add(ModItems.IRON_DUST.get(), "Iron Dust");
+        add(ModItems.IRON_PLATE.get(), "Iron Plate");
+        add(ModItems.CARBONATED_IRON_DUST.get(), "FeC Blend");
+
 
         // Storage Blocks
         add(ModBlocks.OGANESSON_BLOCK.get(), "Block of Oganesson");
@@ -71,6 +80,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), "Block of H-R Oganesson");
         add(ModBlocks.TIN_BLOCK.get(), "Block of Tin");
         add(ModBlocks.BRONZE_BLOCK.get(), "Block of Bronze");
+        add(ModBlocks.STEEL_BLOCK.get(), "Block of Steel");
 
         // Ores
         add(ModBlocks.TIN_ORE.get(), "Tin Ore");
@@ -80,11 +90,16 @@ public class ModLanguageProvider extends LanguageProvider {
 
         // Misc
         add(ModBlocks.CRUDE_CHASSIS.get(), "Crude Machine Chassis");
-        add(ModBlocks.TIN_CHASSIS.get(), "Tin Machine Chassis");
+        add(ModBlocks.STEEL_CHASSIS.get(), "Steel Machine Chassis");
         add(ModBlocks.BRONZE_CHASSIS.get(), "Bronze Machine Chassis");
         add(ModBlocks.TUNGSTEN_CHASSIS.get(), "Tungsten Machine Chassis");
         add(ModBlocks.TITANIUM_CHASSIS.get(), "Titanium Machine Chassis");
         add(ModItems.PEBBLE.get(), "Pebble");
+        add(ModItems.MACHINIST_HAMMER.get(), "Machinist's Hammer");
+        add(ModItems.DIAMOND_DUST.get(), "Diamond Grit");
+        add(ModItems.EMERALD_DUST.get(), "Emerald Grit");
+        add(ModItems.AMETHYST_DUST.get(), "Amethyst Powder");
+
 
         // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");

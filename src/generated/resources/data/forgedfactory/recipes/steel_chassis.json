@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "H": {
+      "item": "forgedfactory:machinist_hammer"
+    },
+    "N": {
+      "tag": "forge:nuggets/steel"
+    },
+    "P": {
+      "tag": "forge:plates/steel"
+    }
+  },
+  "pattern": [
+    "PNP",
+    "AHA",
+    "PNP"
+  ],
+  "result": {
+    "item": "forgedfactory:steel_chassis"
+  }
+}

@@ -1,8 +1,11 @@
-// 1.19.2	2022-12-14T18:54:44.4986537	Tags for minecraft:item
+// 1.19.2	2022-12-19T15:35:37.3034795	Tags for minecraft:item
 94ca4512e48993201af456b6e6c66ac79af3521b data/forge/tags/items/dusts/bronze.json
 2e61c1082c472aafed1e04320214c0dc1f563687 data/forge/tags/items/dusts/copper.json
+257bc62522723c3756ca1ee5a72086ad09a662f9 data/forge/tags/items/dusts/diamond.json
+d85042899aeb1da9ce0003fdc840cf420ae087fe data/forge/tags/items/dusts/emerald.json
 a9bb46d59dfa38c42b4b5f3c6923dbd0ce22df13 data/forge/tags/items/dusts/hr_ogn.json
 ac8b65946b2d9cf4837d5a95e97b30b1d2e59dc7 data/forge/tags/items/dusts/oganesson.json
+727b7912ee8b60c2fd10f18b34e7ae54c2667b86 data/forge/tags/items/dusts/steel.json
 35002c06def42216a372b94982e5d10dd3195767 data/forge/tags/items/dusts/tin.json
 d849f1fc2dfb7ef53969b2201a09f69975bad350 data/forge/tags/items/dusts/titanium.json
 23848b40dea0a8448fa97dc0b0f7e1eff641ca8f data/forge/tags/items/dusts/tungsten.json
@@ -12,19 +15,21 @@ d849f1fc2dfb7ef53969b2201a09f69975bad350 data/forge/tags/items/dusts/titanium.js
 80cb82ccf044aa01232b11453e813d627e7d989f data/forge/tags/items/gears/tin.json
 ed68be94c2ffa6c9914028cb7923dcfe2c0450b8 data/forge/tags/items/gears/titanium.json
 13c3c2b6bb65973c004a1ef2aa8740aec47b6fd8 data/forge/tags/items/gears/tungsten.json
-18e83711aec45470673dd7a50d79fd7fcf310f32 data/forge/tags/items/ingots.json
+ed0369ec49e9a3632676ebdf94686a5151579c14 data/forge/tags/items/ingots.json
 617b8912e8803051ccba83e8ddf3c14ac750df56 data/forge/tags/items/ingots/bronze.json
 c80b43d112feceefcf51ac9121cdd698e96a3170 data/forge/tags/items/ingots/entangled.json
 905e5bde565b3de089512d44f899663554cb67eb data/forge/tags/items/ingots/hr_ogn.json
 6bd9f3a736c75b052397f29ff786cc1a801f0fb9 data/forge/tags/items/ingots/oganesson.json
+162d69d58efb59073f03795e5f464591f3cedc4c data/forge/tags/items/ingots/steel.json
 58fd66507a91c23e4f9c339bd1f1277f7024ab47 data/forge/tags/items/ingots/tin.json
 13eb4467dca90f14ce91f5a41c78eab92b11b07b data/forge/tags/items/ingots/titanium.json
 6be9719f55476874117d480a430f023dca1d5dd5 data/forge/tags/items/ingots/tungsten.json
-74c3908abb7d169d038b3dd3f6a85a1693ef103d data/forge/tags/items/nuggets.json
+db623c40bbbe699a38b35d5e2161f302695eb779 data/forge/tags/items/nuggets.json
 b5321209e997638ffe67b26b1e44d90465eeeb1a data/forge/tags/items/nuggets/bronze.json
 0499d04ac582e08e2277c11ec29ec3cc1d1c37c4 data/forge/tags/items/nuggets/copper.json
 16cc2d30105a7d72564ac8ed00cfd07a64861049 data/forge/tags/items/nuggets/hr_ogn.json
 f4d02e764cc199b4a62178e53dc6128dd2934c25 data/forge/tags/items/nuggets/oganesson.json
+0b99cc4de704f4d72128fed637481d3cfe15aab6 data/forge/tags/items/nuggets/steel.json
 1e2ea76ec39d7105a1923bebe3d15b33421be68b data/forge/tags/items/nuggets/tin.json
 5830010753fb41c024b749ec2c87ec3b2f03f9b9 data/forge/tags/items/nuggets/titanium.json
 b957dfa774f37da1d314327fc8d9c456082ef069 data/forge/tags/items/nuggets/tungsten.json
@@ -35,16 +40,18 @@ a1df0c41568342e9c4d1745c564767f323567499 data/forge/tags/items/plates/bronze.jso
 cf424b8065f29cc5a72ca0773068bd189a1100e9 data/forge/tags/items/plates/copper.json
 b2f4126cc5a377c4d07fccef893448452a35128c data/forge/tags/items/plates/hr_ogn.json
 361c739ad5e4ee2d059bc858e44943b199e72441 data/forge/tags/items/plates/oganesson.json
+c628b4e0cb07eea6f3dd84cc05adc67e6f6b9f40 data/forge/tags/items/plates/steel.json
 27df0e8a29b34bfda69ad40e225f6bccf963c15a data/forge/tags/items/plates/tin.json
 1a8d6e08e0c5bc7846b1da4e2e3a17e477035bc4 data/forge/tags/items/plates/titanium.json
 38baef11b1905ac3337bbd98e496bb2eaa799cb8 data/forge/tags/items/plates/tungsten.json
 1105bad13ccfdf0c95744488665593b5ba21deb2 data/forge/tags/items/raw_materials.json
 f35d1ab5a946be60e7fe9c8a0714743e6555d243 data/forge/tags/items/raw_materials/tin.json
 35f6ac673157388b280535fe35b2f769ca956160 data/forge/tags/items/raw_materials/titanium.json
-77fec8450ed45587481b95a43350d7f38b6988f0 data/forge/tags/items/storage_blocks.json
+6000f913338a8b150488005f0d5e68ca25946862 data/forge/tags/items/storage_blocks.json
 e4650cafd8ca0fbeadad45d978b1f2a0ed402bcf data/forge/tags/items/storage_blocks/bronze.json
 876ce5259044c1740b8ecd0a6d72329ea7d5f362 data/forge/tags/items/storage_blocks/hr_ogn.json
 e5bc8bcc432eb1a9a96453385cb4e66aedbc5795 data/forge/tags/items/storage_blocks/oganesson.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/items/storage_blocks/steel.json
 b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/items/storage_blocks/tin.json
 731736ae63d2c2561c6d087cf8bd138acc5b8671 data/forge/tags/items/storage_blocks/titanium.json
 4b221c1cd5c426ae0213b594e4761a52ba713866 data/forge/tags/items/storage_blocks/tungsten.json

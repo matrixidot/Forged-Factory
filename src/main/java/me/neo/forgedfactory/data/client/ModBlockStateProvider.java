@@ -27,7 +27,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.BRONZE_BLOCK.get());
         simpleBlock(ModBlocks.CRUDE_CHASSIS.get());
         simpleBlock(ModBlocks.BRONZE_CHASSIS.get());
-        simpleBlock(ModBlocks.TIN_CHASSIS.get());
+        simpleBlock(ModBlocks.STEEL_CHASSIS.get());
+        simpleBlock(ModBlocks.STEEL_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_CHASSIS.get());
         simpleBlock(ModBlocks.TUNGSTEN_CHASSIS.get());
 

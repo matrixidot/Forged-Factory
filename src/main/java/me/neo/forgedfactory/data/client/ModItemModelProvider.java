@@ -27,7 +27,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("alloy_kiln", modLoc("block/alloy_kiln"));
         withExistingParent("brick_smasher", modLoc("block/brick_smasher"));
         withExistingParent("crude_chassis", modLoc("block/crude_chassis"));
-        withExistingParent("tin_chassis", modLoc("block/tin_chassis"));
+        withExistingParent("steel_chassis", modLoc("block/steel_chassis"));
+        withExistingParent("steel_block", modLoc("block/steel_block"));
         withExistingParent("bronze_chassis", modLoc("block/bronze_chassis"));
         withExistingParent("titanium_chassis", modLoc("block/titanium_chassis"));
         withExistingParent("tungsten_chassis", modLoc("block/tungsten_chassis"));
@@ -70,9 +71,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "copper_plate");
         builder(itemGenerated, "copper_gear");
         builder(itemGenerated, "copper_pipe");
+        builder(itemGenerated, "steel_ingot");
+        builder(itemGenerated, "steel_nugget");
+        builder(itemGenerated, "steel_dust");
+        builder(itemGenerated, "steel_plate");
 
 
         builder(itemGenerated, "pebble");
+        builder(itemGenerated, "machinist_hammer");
+        builder(itemGenerated, "diamond_dust");
+        builder(itemGenerated, "emerald_dust");
+        builder(itemGenerated, "carbonated_iron_dust");
+        builder(itemGenerated, "iron_dust");
+        builder(itemGenerated, "iron_plate");
+        builder(itemGenerated, "amethyst_dust");
+        builder(itemGenerated, "bronze_casing");
+
 
 
     }

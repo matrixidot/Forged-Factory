@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:gears/tin"
+            "tag": "forge:ingots/tin"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "forgedfactory:tin_chassis"
+        "recipe": "forgedfactory:machinist_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "forgedfactory:tin_chassis"
+      "forgedfactory:machinist_hammer"
     ]
   }
 }

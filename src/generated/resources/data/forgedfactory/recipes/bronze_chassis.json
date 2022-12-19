@@ -4,20 +4,20 @@
     "A": {
       "item": "minecraft:amethyst_shard"
     },
+    "C": {
+      "item": "forgedfactory:bronze_casing"
+    },
     "G": {
       "tag": "forge:gears/bronze"
     },
     "N": {
       "tag": "forge:nuggets/bronze"
-    },
-    "P": {
-      "tag": "forge:plates/bronze"
     }
   },
   "pattern": [
-    "PNP",
+    "CNC",
     "AGA",
-    "PNP"
+    "CNC"
   ],
   "result": {
     "item": "forgedfactory:bronze_chassis"

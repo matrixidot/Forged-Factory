@@ -2,6 +2,7 @@ package me.neo.forgedfactory.setup;
 
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.items.CreativeModTab;
+import me.neo.forgedfactory.items.custom.MachinistHammer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -71,6 +72,15 @@ public class ModItems {
     public static final RegistryObject<Item> TUNGSTEN_GEAR = ITEMS.register("tungsten_gear", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> STEEL_PLATE = ITEMS.register("steel_plate", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () ->
@@ -93,9 +103,25 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_PIPE = ITEMS.register("copper_pipe", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
+    public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> MACHINIST_HAMMER = ITEMS.register("machinist_hammer", () -> new MachinistHammer(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY).durability(48)));
+    public static final RegistryObject<Item> CARBONATED_IRON_DUST = ITEMS.register("carbonated_iron_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> DIAMOND_DUST = ITEMS.register("diamond_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> EMERALD_DUST = ITEMS.register("emerald_dust", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> BRONZE_CASING = ITEMS.register("bronze_casing", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

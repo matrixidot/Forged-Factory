@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "H": {
+      "item": "forgedfactory:machinist_hammer"
+    },
+    "I": {
+      "tag": "forge:ingots/bronze"
+    },
+    "N": {
+      "tag": "forge:nuggets/bronze"
+    }
+  },
+  "pattern": [
+    "   ",
+    "HIN",
+    " NI"
+  ],
+  "result": {
+    "item": "forgedfactory:bronze_casing"
+  }
+}

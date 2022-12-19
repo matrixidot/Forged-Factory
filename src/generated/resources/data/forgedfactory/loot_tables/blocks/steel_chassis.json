@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "forgedfactory:tin_chassis"
+          "name": "forgedfactory:steel_chassis"
         }
       ],
       "rolls": 1.0

@@ -117,12 +117,13 @@ public class ModRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(ModBlocks.CRUDE_CHASSIS.get(), 1).pattern("PNP").pattern("AGA").pattern("PNP")
                 .define('P', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('G', ItemTagsFF.GEARS_COPPER).define('A', Items.AMETHYST_SHARD)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_COPPER)).save(pFinishedRecipeConsumer, modId("crude_chassis"));
-        ShapedRecipeBuilder.shaped(ModBlocks.TIN_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
-                .define('P', ItemTagsFF.PLATES_TIN).define('N', ItemTagsFF.NUGGETS_TIN).define('G', ItemTagsFF.GEARS_TIN).define('R', Items.REDSTONE)
-                .unlockedBy("has_item", has(ItemTagsFF.GEARS_TIN)).save(pFinishedRecipeConsumer, modId("tin_chassis"));
-        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_CHASSIS.get(), 1).pattern("PNP").pattern("AGA").pattern("PNP")
-                .define('P', ItemTagsFF.PLATES_BRONZE).define('N', ItemTagsFF.NUGGETS_BRONZE).define('G', ItemTagsFF.GEARS_BRONZE).define('A', Items.AMETHYST_SHARD)
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BRONZE_CHASSIS.get(), 1).pattern("CNC").pattern("AGA").pattern("CNC")
+                .define('C', ModItems.BRONZE_CASING.get()).define('N', ItemTagsFF.NUGGETS_BRONZE).define('G', ItemTagsFF.GEARS_BRONZE).define('A', Items.AMETHYST_SHARD)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_BRONZE)).save(pFinishedRecipeConsumer, modId("bronze_chassis"));
+        ShapedRecipeBuilder.shaped(ModBlocks.STEEL_CHASSIS.get(), 1).pattern("PNP").pattern("AHA").pattern("PNP")
+                .define('P', ItemTagsFF.PLATES_STEEL).define('N', ItemTagsFF.NUGGETS_STEEL).define('H', ModItems.MACHINIST_HAMMER.get()).define('A', Items.AMETHYST_SHARD)
+                .unlockedBy("has_item", has(ModItems.MACHINIST_HAMMER.get())).save(pFinishedRecipeConsumer, modId("steel_chassis"));
         ShapedRecipeBuilder.shaped(ModBlocks.TITANIUM_CHASSIS.get(), 1).pattern("PNP").pattern("RGR").pattern("PNP")
                 .define('P', ItemTagsFF.PLATES_TITANIUM).define('N', ItemTagsFF.NUGGETS_TITANIUM).define('G', ItemTagsFF.GEARS_TITANIUM).define('R', Items.REDSTONE)
                 .unlockedBy("has_item", has(ItemTagsFF.GEARS_TITANIUM)).save(pFinishedRecipeConsumer, modId("titanium_chassis"));
@@ -138,7 +139,14 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('R', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('C', ModBlocks.CRUDE_CHASSIS.get()).define('P', ModItems.COPPER_PIPE.get())
                 .unlockedBy("has_item", has(ModBlocks.CRUDE_CHASSIS.get())).save(pFinishedRecipeConsumer, modId("alloy_kiln_recipe"));
         
-        
+        ShapedRecipeBuilder.shaped(ModItems.MACHINIST_HAMMER.get(), 1).pattern(" TS").pattern(" NT").pattern("S  ")
+                .define('T', ItemTagsFF.INGOTS_TIN).define('S', Items.STICK).define('N', ItemTagsFF.NUGGETS_BRONZE)
+                .unlockedBy("has_item", has(ItemTagsFF.INGOTS_TIN)).save(pFinishedRecipeConsumer, modId("machinist_hammer"));
+
+        ShapedRecipeBuilder.shaped(ModItems.BRONZE_CASING.get(), 1).pattern("   ").pattern("HIN").pattern(" NI")
+                .define('H', ModItems.MACHINIST_HAMMER.get()).define('I', ItemTagsFF.INGOTS_BRONZE).define('N', ItemTagsFF.NUGGETS_BRONZE)
+                .unlockedBy("has_item", has(ModItems.MACHINIST_HAMMER.get())).save(pFinishedRecipeConsumer, modId("bronze_casing"));
+
         /* PROCESSING RECIPES */
         // Smelting
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.TIN_ORE.get()), ModItems.TIN_INGOT.get(), .7F, 200)

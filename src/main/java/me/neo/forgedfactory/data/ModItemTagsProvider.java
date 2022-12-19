@@ -27,6 +27,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.TITANIUM_INGOT.get())
                 .add(ModItems.TIN_INGOT.get())
                 .add(ModItems.BRONZE_INGOT.get())
+                .add(ModItems.STEEL_INGOT.get())
                 .add(ModItems.TUNGSTEN_INGOT.get());
         tag(Tags.Items.STORAGE_BLOCKS)
                 .add(ModBlocks.TUNGSTEN_BLOCK.get().asItem())
@@ -34,6 +35,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModBlocks.TITANIUM_BLOCK.get().asItem())
                 .add(ModBlocks.TIN_BLOCK.get().asItem())
                 .add(ModBlocks.BRONZE_BLOCK.get().asItem())
+                .add(ModBlocks.STEEL_BLOCK.get().asItem())
                 .add(ModBlocks.OGANESSON_BLOCK.get().asItem());
         tag(Tags.Items.NUGGETS)
                 .add(ModItems.OGANESSON_NUGGET.get())
@@ -42,6 +44,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.TIN_NUGGET.get())
                 .add(ModItems.COPPER_NUGGET.get())
                 .add(ModItems.BRONZE_NUGGET.get())
+                .add(ModItems.STEEL_NUGGET.get())
                 .add(ModItems.TUNGSTEN_NUGGET.get());
         tag(Tags.Items.RAW_MATERIALS)
                 .add(ModItems.RAW_TITANIUM.get())
@@ -54,6 +57,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.DUSTS_TIN).add(ModItems.TIN_DUST.get());
         tag(ItemTagsFF.DUSTS_TITANIUM).add(ModItems.TITANIUM_DUST.get());
         tag(ItemTagsFF.DUSTS_TUNGSTEN).add(ModItems.TUNGSTEN_DUST.get());
+        tag(ItemTagsFF.DUSTS_STEEL).add(ModItems.STEEL_DUST.get());
+        tag(ItemTagsFF.DUSTS_DIAMOND).add(ModItems.DIAMOND_DUST.get());
+        tag(ItemTagsFF.DUSTS_EMERALD).add(ModItems.EMERALD_DUST.get());
 
         tag(ItemTagsFF.INGOTS_BRONZE).add(ModItems.BRONZE_INGOT.get());
         tag(ItemTagsFF.INGOTS_HR_OGN).add(ModItems.HR_OGN_INGOT.get());
@@ -62,6 +68,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.INGOTS_TITANIUM).add(ModItems.TITANIUM_INGOT.get());
         tag(ItemTagsFF.INGOTS_TUNGSTEN).add(ModItems.TUNGSTEN_INGOT.get());
         tag(ItemTagsFF.INGOTS_ENTANGLED).add(ModItems.ENTANGLED_INGOT.get());
+        tag(ItemTagsFF.INGOTS_STEEL).add(ModItems.STEEL_INGOT.get());
 
         tag(ItemTagsFF.PLATES);
         tag(ItemTagsFF.PLATES_BRONZE).add(ModItems.BRONZE_PLATE.get());
@@ -71,6 +78,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.PLATES_TIN).add(ModItems.TIN_PLATE.get());
         tag(ItemTagsFF.PLATES_TITANIUM).add(ModItems.TITANIUM_PLATE.get());
         tag(ItemTagsFF.PLATES_TUNGSTEN).add(ModItems.TUNGSTEN_PLATE.get());
+        tag(ItemTagsFF.PLATES_STEEL).add(ModItems.STEEL_PLATE.get());
 
         tag(ItemTagsFF.NUGGETS_BRONZE).add(ModItems.BRONZE_NUGGET.get());
         tag(ItemTagsFF.NUGGETS_COPPER).add(ModItems.COPPER_NUGGET.get());
@@ -79,6 +87,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.NUGGETS_TIN).add(ModItems.TIN_NUGGET.get());
         tag(ItemTagsFF.NUGGETS_TITANIUM).add(ModItems.TITANIUM_NUGGET.get());
         tag(ItemTagsFF.NUGGETS_TUNGSTEN).add(ModItems.TUNGSTEN_NUGGET.get());
+        tag(ItemTagsFF.NUGGETS_STEEL).add(ModItems.STEEL_NUGGET.get());
 
         tag(ItemTagsFF.RAW_MATERIALS_TIN).add(ModItems.RAW_TIN.get());
         tag(ItemTagsFF.RAW_MATERIALS_TITANIUM).add(ModItems.RAW_TITANIUM.get());
@@ -97,6 +106,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         copy(BlockTagsFF.STORAGE_BLOCKS_TIN, ItemTagsFF.STORAGE_BLOCKS_TIN);
         copy(BlockTagsFF.STORAGE_BLOCKS_TITANIUM, ItemTagsFF.STORAGE_BLOCKS_TITANIUM);
         copy(BlockTagsFF.STORAGE_BLOCKS_TUNGSTEN, ItemTagsFF.STORAGE_BLOCKS_TUNGSTEN);
+        copy(BlockTagsFF.STORAGE_BLOCKS_STEEL, ItemTagsFF.STORAGE_BLOCKS_STEEL);
 
 
         copy(BlockTagsFF.ORES_TIN, ItemTagsFF.ORES_TIN);
