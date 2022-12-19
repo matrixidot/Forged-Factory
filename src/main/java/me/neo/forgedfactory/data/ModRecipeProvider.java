@@ -201,6 +201,7 @@ public class ModRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.OGANESSON_DUST.get()), ModItems.OGANESSON_INGOT.get(), .7F, 100)
                 .unlockedBy("has_item", has(ModItems.OGANESSON_DUST.get())).save(pFinishedRecipeConsumer, modId("d2i_oganesson_blast"));
 
+
     }
 
     /*

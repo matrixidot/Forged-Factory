@@ -60,6 +60,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.DUSTS_STEEL).add(ModItems.STEEL_DUST.get());
         tag(ItemTagsFF.DUSTS_DIAMOND).add(ModItems.DIAMOND_DUST.get());
         tag(ItemTagsFF.DUSTS_EMERALD).add(ModItems.EMERALD_DUST.get());
+        tag(ItemTagsFF.DUSTS_IRON).add(ModItems.IRON_DUST.get());
+        tag(ItemTagsFF.DUSTS_AMETHYST).add(ModItems.AMETHYST_DUST.get());
 
         tag(ItemTagsFF.INGOTS_BRONZE).add(ModItems.BRONZE_INGOT.get());
         tag(ItemTagsFF.INGOTS_HR_OGN).add(ModItems.HR_OGN_INGOT.get());
@@ -79,6 +81,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.PLATES_TITANIUM).add(ModItems.TITANIUM_PLATE.get());
         tag(ItemTagsFF.PLATES_TUNGSTEN).add(ModItems.TUNGSTEN_PLATE.get());
         tag(ItemTagsFF.PLATES_STEEL).add(ModItems.STEEL_PLATE.get());
+        tag(ItemTagsFF.PLATES_IRON).add(ModItems.IRON_PLATE.get());
 
         tag(ItemTagsFF.NUGGETS_BRONZE).add(ModItems.BRONZE_NUGGET.get());
         tag(ItemTagsFF.NUGGETS_COPPER).add(ModItems.COPPER_NUGGET.get());

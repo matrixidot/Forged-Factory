@@ -1,0 +1,12 @@
+{
+  "type": "forgedfactory:brick_smasher_recipe",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/bronze",
+      "count": 1
+    }
+  ],
+  "output": {
+    "item": "forgedfactory:bronze_plate"
+  }
+}

@@ -1,9 +1,11 @@
-// 1.19.2	2022-12-19T15:35:37.3034795	Tags for minecraft:item
+// 1.19.2	2022-12-19T16:00:18.8853729	Tags for minecraft:item
+bd4ce96593a60aa4b30aa7083aebc1ef024c9b69 data/forge/tags/items/dusts/amethyst.json
 94ca4512e48993201af456b6e6c66ac79af3521b data/forge/tags/items/dusts/bronze.json
 2e61c1082c472aafed1e04320214c0dc1f563687 data/forge/tags/items/dusts/copper.json
 257bc62522723c3756ca1ee5a72086ad09a662f9 data/forge/tags/items/dusts/diamond.json
 d85042899aeb1da9ce0003fdc840cf420ae087fe data/forge/tags/items/dusts/emerald.json
 a9bb46d59dfa38c42b4b5f3c6923dbd0ce22df13 data/forge/tags/items/dusts/hr_ogn.json
+f5ea3006b32b3ec2209b43dd33264dd86fe107a4 data/forge/tags/items/dusts/iron.json
 ac8b65946b2d9cf4837d5a95e97b30b1d2e59dc7 data/forge/tags/items/dusts/oganesson.json
 727b7912ee8b60c2fd10f18b34e7ae54c2667b86 data/forge/tags/items/dusts/steel.json
 35002c06def42216a372b94982e5d10dd3195767 data/forge/tags/items/dusts/tin.json
@@ -39,6 +41,7 @@ b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/items/ores/titanium.jso
 a1df0c41568342e9c4d1745c564767f323567499 data/forge/tags/items/plates/bronze.json
 cf424b8065f29cc5a72ca0773068bd189a1100e9 data/forge/tags/items/plates/copper.json
 b2f4126cc5a377c4d07fccef893448452a35128c data/forge/tags/items/plates/hr_ogn.json
+d3bdbf844635805eabc553d048a38aaf049c9a83 data/forge/tags/items/plates/iron.json
 361c739ad5e4ee2d059bc858e44943b199e72441 data/forge/tags/items/plates/oganesson.json
 c628b4e0cb07eea6f3dd84cc05adc67e6f6b9f40 data/forge/tags/items/plates/steel.json
 27df0e8a29b34bfda69ad40e225f6bccf963c15a data/forge/tags/items/plates/tin.json
