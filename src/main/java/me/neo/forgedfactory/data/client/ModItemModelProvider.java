@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("bronze_block", modLoc("block/bronze_block"));
         withExistingParent("alloy_kiln", modLoc("block/alloy_kiln"));
         withExistingParent("brick_smasher", modLoc("block/brick_smasher"));
+        withExistingParent("dust_mixer", modLoc("block/dust_mixer"));
         withExistingParent("crude_chassis", modLoc("block/crude_chassis"));
         withExistingParent("steel_chassis", modLoc("block/steel_chassis"));
         withExistingParent("steel_block", modLoc("block/steel_block"));

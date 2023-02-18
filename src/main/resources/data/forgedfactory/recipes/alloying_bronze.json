@@ -10,6 +10,14 @@
       "count": 1
     }
   ],
+  "misc": [
+    {
+      "time": 20
+    },
+    {
+      "power": 0
+    }
+  ],
   "output": {
     "item": "forgedfactory:bronze_ingot",
     "count": 4

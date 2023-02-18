@@ -14,6 +14,8 @@ public class ModRecipes {
             () -> AlloyKilnRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<BrickSmasherRecipe>> BRICK_SMASHER_RECIPE_SERIALIZER = SERIALIZERS.register("brick_smasher_recipe",
             () -> BrickSmasherRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<DustMixerRecipe>> DUST_MIXER_RECIPE_SERIALIZER = SERIALIZERS.register("dust_mixer_recipe",
+            () -> DustMixerRecipe.Serializer.INSTANCE);
 
 
     public static void register(IEventBus eventBus) {

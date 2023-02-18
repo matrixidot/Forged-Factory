@@ -16,7 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlock(ModBlocks.OGANESSON_BLOCK.get());
-        simpleBlock(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
+        simpleBlock(ModBlocks.HR_OGN_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_BLOCK.get());
         simpleBlock(ModBlocks.TUNGSTEN_BLOCK.get());
         simpleBlock(ModBlocks.TIN_BLOCK.get());
@@ -35,6 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         horizontalBlock(ModBlocks.ALLOY_KILN.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
         horizontalBlock(ModBlocks.BRICK_SMASHER.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
+        horizontalBlock(ModBlocks.DUST_MIXER.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
     }
 
 

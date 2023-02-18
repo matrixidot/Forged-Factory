@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "forgedfactory:carbonated_iron_dust"
+  },
+  "result": "forgedfactory:steel_ingot"
+}

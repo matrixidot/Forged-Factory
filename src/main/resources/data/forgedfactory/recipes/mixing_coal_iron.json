@@ -1,0 +1,25 @@
+{
+  "type": "forgedfactory:dust_mixer_recipe",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/iron",
+      "count": 2
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 1
+    }
+  ],
+  "misc": [
+    {
+      "time": 100
+    },
+    {
+      "power": 0
+    }
+  ],
+  "output": {
+    "item": "forgedfactory:carbonated_iron_dust",
+    "count": 2
+  }
+}

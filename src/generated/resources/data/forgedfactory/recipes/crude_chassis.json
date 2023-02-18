@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "A": {
+    "C": {
+      "item": "forgedfactory:pebble"
+    },
+    "M": {
       "item": "minecraft:amethyst_shard"
     },
-    "G": {
+    "S": {
       "tag": "forge:gears/copper"
     },
-    "N": {
+    "T": {
       "tag": "forge:nuggets/copper"
-    },
-    "P": {
-      "item": "forgedfactory:pebble"
     }
   },
   "pattern": [
-    "PNP",
-    "AGA",
-    "PNP"
+    "CTC",
+    "MSM",
+    "CTC"
   ],
   "result": {
     "item": "forgedfactory:crude_chassis"

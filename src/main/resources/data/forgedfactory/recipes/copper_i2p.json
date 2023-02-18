@@ -6,7 +6,16 @@
       "count": 1
     }
   ],
+  "misc": [
+    {
+      "time": 20
+    },
+    {
+      "power": 0
+    }
+  ],
   "output": {
-    "item": "forgedfactory:copper_plate"
+    "item": "forgedfactory:copper_plate",
+    "count": 1
   }
 }

@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:gears/tungsten"
+            "items": [
+              "forgedfactory:machinist_hammer"
+            ]
           }
         ]
       },

@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-19T15:35:37.3004789	Tags for minecraft:block
+// 1.19.2	2023-02-18T13:50:29.9866941	Tags for minecraft:block
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forgedfactory/tags/blocks/chassis.json
 3d85f27c5701a7adf71f736e7c5646a465f2942b data/forgedfactory/tags/blocks/chassis/bronze_chassis.json
 44e4fb0ca6391ca939fc61010527a535b016abc8 data/forgedfactory/tags/blocks/chassis/crude_chassis.json
@@ -15,6 +15,6 @@ e5bc8bcc432eb1a9a96453385cb4e66aedbc5795 data/forge/tags/blocks/storage_blocks/o
 b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/blocks/storage_blocks/tin.json
 731736ae63d2c2561c6d087cf8bd138acc5b8671 data/forge/tags/blocks/storage_blocks/titanium.json
 4b221c1cd5c426ae0213b594e4761a52ba713866 data/forge/tags/blocks/storage_blocks/tungsten.json
-43e063797156763b3a7c39d07e939528a4d9837f data/minecraft/tags/blocks/mineable/pickaxe.json
+ef7bb292f5c7629f999a5781ac1012940f864563 data/minecraft/tags/blocks/mineable/pickaxe.json
 2e55000476fc5daa399f7331eca40bf9ac0a0258 data/minecraft/tags/blocks/needs_iron_tool.json
-98918554c6c8c88f789ba903e77c3c876c0bf375 data/minecraft/tags/blocks/needs_stone_tool.json
+1d76dbabf9159ddcde33a432dcf8a20ff654504f data/minecraft/tags/blocks/needs_stone_tool.json

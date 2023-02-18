@@ -9,7 +9,6 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 public class ModBlockTagsProvider extends BlockTagsProvider {
@@ -21,7 +20,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
-                .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
+                .add(ModBlocks.HR_OGN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.TIN_BLOCK.get())
@@ -31,10 +30,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get())
                 .add(ModBlocks.BRONZE_BLOCK.get())
                 .add(ModBlocks.BRICK_SMASHER.get())
+                .add(ModBlocks.DUST_MIXER.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
-                .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
+                .add(ModBlocks.HR_OGN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_ORE.get())
@@ -51,10 +51,12 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.BRONZE_BLOCK.get())
                 .add(ModBlocks.BRICK_SMASHER.get())
                 .add(ModBlocks.CRUDE_CHASSIS.get())
+                .add(ModBlocks.DUST_MIXER.get())
+                .add(ModBlocks.BRICK_SMASHER.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.OGANESSON_BLOCK.get())
-                .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get())
+                .add(ModBlocks.HR_OGN_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TUNGSTEN_BLOCK.get())
                 .add(ModBlocks.BRONZE_BLOCK.get())
@@ -71,7 +73,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTagsFF.STORAGE_BLOCKS_TIN).add(ModBlocks.TIN_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_BRONZE).add(ModBlocks.BRONZE_BLOCK.get());
-        tag(BlockTagsFF.STORAGE_BLOCKS_HR_OGN).add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
+        tag(BlockTagsFF.STORAGE_BLOCKS_HR_OGN).add(ModBlocks.HR_OGN_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_OGANESSON).add(ModBlocks.OGANESSON_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_TITANIUM).add(ModBlocks.TITANIUM_BLOCK.get());
         tag(BlockTagsFF.STORAGE_BLOCKS_TUNGSTEN).add(ModBlocks.TUNGSTEN_BLOCK.get());

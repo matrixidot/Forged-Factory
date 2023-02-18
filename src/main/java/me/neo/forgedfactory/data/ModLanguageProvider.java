@@ -5,7 +5,6 @@ import me.neo.forgedfactory.setup.ModBlocks;
 import me.neo.forgedfactory.setup.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.fml.common.Mod;
 
 public class ModLanguageProvider extends LanguageProvider {
     public ModLanguageProvider(DataGenerator gen, String modid, String locale) {
@@ -77,7 +76,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.OGANESSON_BLOCK.get(), "Block of Oganesson");
         add(ModBlocks.TITANIUM_BLOCK.get(), "Block of Titanium");
         add(ModBlocks.TUNGSTEN_BLOCK.get(), "Block of Tungsten");
-        add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), "Block of H-R Oganesson");
+        add(ModBlocks.HR_OGN_BLOCK.get(), "Block of H-R Oganesson");
         add(ModBlocks.TIN_BLOCK.get(), "Block of Tin");
         add(ModBlocks.BRONZE_BLOCK.get(), "Block of Bronze");
         add(ModBlocks.STEEL_BLOCK.get(), "Block of Steel");
@@ -104,5 +103,9 @@ public class ModLanguageProvider extends LanguageProvider {
         // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");
         add(ModBlocks.BRICK_SMASHER.get(), "Brick Smasher");
+        add(ModBlocks.DUST_MIXER.get(), "Dust Mixer");
+
+        // Components
+        add("dust_mixer_entity", "Dust Mixer");
     }
 }

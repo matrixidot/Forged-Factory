@@ -1,0 +1,21 @@
+{
+  "type": "forgedfactory:brick_smasher_recipe",
+  "ingredients": [
+    {
+      "tag": "forge:plates/copper",
+      "count": 1
+    }
+  ],
+  "misc": [
+    {
+      "time": 20
+    },
+    {
+      "power": 0
+    }
+  ],
+  "output": {
+    "item": "forgedfactory:copper_dust",
+    "count": 1
+  }
+}

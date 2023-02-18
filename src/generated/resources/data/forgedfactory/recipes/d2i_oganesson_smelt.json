@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "cookingtime": 200,
-  "experience": 0.7,
-  "ingredient": {
-    "item": "forgedfactory:oganesson_dust"
-  },
-  "result": "forgedfactory:oganesson_ingot"
-}

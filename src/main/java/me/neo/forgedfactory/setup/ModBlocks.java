@@ -3,6 +3,7 @@ package me.neo.forgedfactory.setup;
 import me.neo.forgedfactory.FF;
 import me.neo.forgedfactory.blocks.tiles.stone.alloykiln.AlloyKiln;
 import me.neo.forgedfactory.blocks.tiles.stone.bricksmasher.BrickSmasher;
+import me.neo.forgedfactory.blocks.tiles.stone.dustmixer.DustMixer;
 import me.neo.forgedfactory.items.CreativeModTab;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -28,8 +29,12 @@ public class ModBlocks {
             () -> new AlloyKiln(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL).lightLevel(state -> state.getValue(AlloyKiln.LIT) ? 14 : 0)), CreativeModTab.FORGED_FACTORY);
     public static final RegistryObject<Block> BRICK_SMASHER = registerBlock("brick_smasher",
             () -> new BrickSmasher(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.STONE)), CreativeModTab.FORGED_FACTORY);
+    public static final RegistryObject<Block> DUST_MIXER = registerBlock("dust_mixer",
+            () -> new DustMixer(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);
 
-    public static final RegistryObject<Block> HYPER_RADIOACTIVE_OGANESSON_BLOCK = registerBlock("hyper_radioactive_oganesson_block",
+
+
+    public static final RegistryObject<Block> HR_OGN_BLOCK = registerBlock("hyper_radioactive_oganesson_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);
     public static final RegistryObject<Block> OGANESSON_BLOCK = registerBlock("oganesson_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);

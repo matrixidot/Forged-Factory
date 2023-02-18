@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hr_ogn_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forgedfactory:hr_ogn_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "forgedfactory:hr_ogn_b_pack"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_hr_ogn_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "forgedfactory:hr_ogn_b_pack"
+    ]
+  }
+}
