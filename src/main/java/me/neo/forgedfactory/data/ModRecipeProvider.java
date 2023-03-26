@@ -135,6 +135,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('N', ItemTagsFF.NUGGETS_COPPER).define('I', Items.COPPER_INGOT)
                 .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_pipe"));
 
+        ShapedRecipeBuilder.shaped(ModBlocks.COPPER_COIL.get(), 1).pattern(" N ").pattern("NIN").pattern(" N ").define('N', ItemTagsFF.WIRES_COPPER)
+                .define('I', Items.IRON_INGOT).unlockedBy("has_item", has(ItemTagsFF.WIRES_COPPER)).save(pFinishedRecipeConsumer, modId("copper_coil"));
+
+        ShapedRecipeBuilder.shaped(ModItems.COPPER_WIRE.get(), 1).pattern("NN ").pattern("N N").pattern(" NN").define('N', ItemTagsFF.NUGGETS_COPPER)
+                .unlockedBy("has_item", has(Items.COPPER_INGOT)).save(pFinishedRecipeConsumer, modId("copper_wire"));
+
+        ShapedRecipeBuilder.shaped(ModItems.IRON_ROD.get(), 1).pattern("  I").pattern(" I ").pattern("I  ").define('I', Items.IRON_INGOT)
+                .unlockedBy("has_item", has(Items.IRON_INGOT)).save(pFinishedRecipeConsumer, modId("iron_rod"));
+
         ShapedRecipeBuilder.shaped(ModBlocks.ALLOY_KILN.get(), 1).pattern("RNR").pattern("PCP").pattern("RNR")
                 .define('R', ModItems.PEBBLE.get()).define('N', ItemTagsFF.NUGGETS_COPPER).define('C', ModBlocks.CRUDE_CHASSIS.get()).define('P', ModItems.COPPER_PIPE.get())
                 .unlockedBy("has_item", has(ModBlocks.CRUDE_CHASSIS.get())).save(pFinishedRecipeConsumer, modId("alloy_kiln_recipe"));

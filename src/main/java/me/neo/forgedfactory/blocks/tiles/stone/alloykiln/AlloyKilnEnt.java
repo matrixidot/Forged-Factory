@@ -2,7 +2,6 @@ package me.neo.forgedfactory.blocks.tiles.stone.alloykiln;
 
 import me.neo.forgedfactory.blocks.WrappedHandler;
 import me.neo.forgedfactory.recipe.AlloyKilnRecipe;
-import me.neo.forgedfactory.recipe.ModRecipes;
 import me.neo.forgedfactory.setup.ModBlockEntities;
 import me.neo.forgedfactory.util.RecipeUtil;
 import net.minecraft.core.BlockPos;
@@ -17,7 +16,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;

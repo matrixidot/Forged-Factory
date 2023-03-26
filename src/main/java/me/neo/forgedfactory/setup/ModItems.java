@@ -102,15 +102,20 @@ public class ModItems {
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> COPPER_PIPE = ITEMS.register("copper_pipe", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> COPPER_WIRE = ITEMS.register("copper_wire", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
+    public static final RegistryObject<Item> IRON_ROD = ITEMS.register("iron_rod", () ->
+            new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
 
     public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
-    public static final RegistryObject<Item> MACHINIST_HAMMER = ITEMS.register("machinist_hammer", () -> new MachinistHammer(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY).durability(48)));
+    public static final RegistryObject<Item> MACHINIST_HAMMER = ITEMS.register("machinist_hammer", () ->
+            new MachinistHammer(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY).durability(48)));
     public static final RegistryObject<Item> CARBONATED_IRON_DUST = ITEMS.register("carbonated_iron_dust", () ->
             new Item(new Item.Properties().tab(CreativeModTab.FORGED_FACTORY)));
     public static final RegistryObject<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust", () ->

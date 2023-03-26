@@ -35,6 +35,8 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModItems.RAW_TITANIUM.get(), "Raw Titanium");
         add(ModItems.TITANIUM_GEAR.get(), "Titanium Gear");
 
+        add(ModItems.COPPER_WIRE.get(), "Copper Wire");
+        add(ModItems.IRON_ROD.get(), "Iron Rod");
 
         add(ModItems.TUNGSTEN_INGOT.get(), "Tungsten Ingot");
         add(ModItems.TUNGSTEN_NUGGET.get(), "Tungsten Nugget");
@@ -104,5 +106,8 @@ public class ModLanguageProvider extends LanguageProvider {
         // Block Entities
         add(ModBlocks.ALLOY_KILN.get(), "Alloy Kiln");
         add(ModBlocks.BRICK_SMASHER.get(), "Brick Smasher");
+
+        // Coils
+        add(ModBlocks.COPPER_COIL.get(), "Copper Coil");
     }
 }

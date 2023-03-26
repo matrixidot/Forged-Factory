@@ -31,10 +31,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.STEEL_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_CHASSIS.get());
         simpleBlock(ModBlocks.TUNGSTEN_CHASSIS.get());
+        simpleBlock(ModBlocks.COPPER_COIL.get());
 
 
         horizontalBlock(ModBlocks.ALLOY_KILN.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
         horizontalBlock(ModBlocks.BRICK_SMASHER.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/alloy_kiln"), models().existingFileHelper));
+        //axisBlock(ModBlocks.COPPER_COIL.get(), new ModelFile.ExistingModelFile(new ResourceLocation(FF.MOD_ID, "block/copper_coil"), models().existingFileHelper));
     }
 
 

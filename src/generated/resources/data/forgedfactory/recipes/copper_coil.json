@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "tag": "forge:wires/copper"
+    }
+  },
+  "pattern": [
+    " N ",
+    "NIN",
+    " N "
+  ],
+  "result": {
+    "item": "forgedfactory:copper_coil"
+  }
+}

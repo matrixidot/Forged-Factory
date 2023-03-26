@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-19T16:00:18.8853729	Tags for minecraft:item
+// 1.19.2	2023-03-24T10:38:24.8325226	Tags for minecraft:item
 bd4ce96593a60aa4b30aa7083aebc1ef024c9b69 data/forge/tags/items/dusts/amethyst.json
 94ca4512e48993201af456b6e6c66ac79af3521b data/forge/tags/items/dusts/bronze.json
 2e61c1082c472aafed1e04320214c0dc1f563687 data/forge/tags/items/dusts/copper.json
@@ -50,6 +50,8 @@ c628b4e0cb07eea6f3dd84cc05adc67e6f6b9f40 data/forge/tags/items/plates/steel.json
 1105bad13ccfdf0c95744488665593b5ba21deb2 data/forge/tags/items/raw_materials.json
 f35d1ab5a946be60e7fe9c8a0714743e6555d243 data/forge/tags/items/raw_materials/tin.json
 35f6ac673157388b280535fe35b2f769ca956160 data/forge/tags/items/raw_materials/titanium.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/items/rods.json
+81777af9a50b9beec36ef7aac6766397a8a99364 data/forge/tags/items/rods/iron.json
 6000f913338a8b150488005f0d5e68ca25946862 data/forge/tags/items/storage_blocks.json
 e4650cafd8ca0fbeadad45d978b1f2a0ed402bcf data/forge/tags/items/storage_blocks/bronze.json
 876ce5259044c1740b8ecd0a6d72329ea7d5f362 data/forge/tags/items/storage_blocks/hr_ogn.json
@@ -58,3 +60,5 @@ e5bc8bcc432eb1a9a96453385cb4e66aedbc5795 data/forge/tags/items/storage_blocks/og
 b127af429dbbde8c64fd5730c98e7f9711ece414 data/forge/tags/items/storage_blocks/tin.json
 731736ae63d2c2561c6d087cf8bd138acc5b8671 data/forge/tags/items/storage_blocks/titanium.json
 4b221c1cd5c426ae0213b594e4761a52ba713866 data/forge/tags/items/storage_blocks/tungsten.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/items/wires.json
+4042a5544d57e0f04c26e1e6e4bf8cd07d4c18f6 data/forge/tags/items/wires/copper.json

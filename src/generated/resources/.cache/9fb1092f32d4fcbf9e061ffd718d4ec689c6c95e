@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-19T15:35:37.3014792	Recipes
+// 1.19.2	2023-03-24T10:38:24.8255725	Recipes
 93ac52babd2a16960669604806ace0af4a6e0fac data/forgedfactory/advancements/recipes/building_blocks/cobble_i2b.json
 246cef8048a96ce9a3c28e6d58d26fcda6e3d3cc data/forgedfactory/advancements/recipes/fftab/alloy_kiln_recipe.json
 27aca8e6399d99c0d08686bed2a97dfc727ccf48 data/forgedfactory/advancements/recipes/fftab/bronze_b2i.json
@@ -9,9 +9,11 @@
 e20f21a24f37e1f0d0866d8f8b3c5d6e8fff656e data/forgedfactory/advancements/recipes/fftab/bronze_i2n.json
 1463bd956542a98880ec4bc05bf4956eeec4df51 data/forgedfactory/advancements/recipes/fftab/bronze_n2i.json
 c05aea1961373fab29ca9d1f127db68f2ad0c4c9 data/forgedfactory/advancements/recipes/fftab/cobble_b2i.json
+850681270d4df979ccf6f788c7bec121d589be44 data/forgedfactory/advancements/recipes/fftab/copper_coil.json
 42a1e2adeaa0cf7aef8e30553a8d31abdac3e462 data/forgedfactory/advancements/recipes/fftab/copper_gear.json
 82719b33e3efe4c3ee791a32b417665c68655c4c data/forgedfactory/advancements/recipes/fftab/copper_i2n.json
 8a3f3057d6b09f129a38f3c80ae0e4086c3ffd76 data/forgedfactory/advancements/recipes/fftab/copper_pipe.json
+eda56c880daec8531be8da135835c50a5b0eaa80 data/forgedfactory/advancements/recipes/fftab/copper_wire.json
 94ef6d410811dc0408af8db57025b71c815f15b8 data/forgedfactory/advancements/recipes/fftab/crude_chassis.json
 c0c44520d703ba209e8fb8d3195486b6e75ea6ac data/forgedfactory/advancements/recipes/fftab/d2i_hr_ogn_blast.json
 62927859d585c73cce80ef7769cc6e4a9dea7cf2 data/forgedfactory/advancements/recipes/fftab/d2i_hr_ogn_smelt.json
@@ -31,6 +33,7 @@ d714b6444252f2ce8afd7deb44f5c76b3518918e data/forgedfactory/advancements/recipes
 712796e090f451d12ccb859822ab02f1e87da3e8 data/forgedfactory/advancements/recipes/fftab/h-r_ogn_i2b.json
 268e50ea2c1670db5caddbaa9c3dfc32e3c4df9d data/forgedfactory/advancements/recipes/fftab/h-r_ogn_i2n.json
 2080a0d6b45e2e778aa376c426d16dea661fc433 data/forgedfactory/advancements/recipes/fftab/h-r_ogn_n2i.json
+5ace2d6b6e269ba279f27ddcd4644a6e829fd922 data/forgedfactory/advancements/recipes/fftab/iron_rod.json
 89e468e8506b50d057dfd72eee695892db13a12e data/forgedfactory/advancements/recipes/fftab/machinist_hammer.json
 7203a1f8c9076144049d953875ae1479d88bef9a data/forgedfactory/advancements/recipes/fftab/o2i_tin_blast.json
 310e36ab3cc3432fd26753d8a2c7795ed6d78b23 data/forgedfactory/advancements/recipes/fftab/o2i_tin_smelt.json
@@ -73,10 +76,12 @@ b5d6d953cb7a289e8bd1bd2b4bf6ce2958043646 data/forgedfactory/recipes/bronze_i2n.j
 61d40e6c2917f88f8fe8aebcb8b9527d4f1b9dea data/forgedfactory/recipes/bronze_n2i.json
 818f5cd7b58d339a68123c4c652177851855a489 data/forgedfactory/recipes/cobble_b2i.json
 948a7b21d7945e8a34ad6b2a3722530b31fb5fde data/forgedfactory/recipes/cobble_i2b.json
+d4c11c6f6bf05433f7ad668d06c566f027b8a2ed data/forgedfactory/recipes/copper_coil.json
 3b419da835884eef3ec382d88cf6e3c0834718a5 data/forgedfactory/recipes/copper_gear.json
 a87ffa2131ceaddc9e244d952049f5d85be0baed data/forgedfactory/recipes/copper_i2n.json
 ffa72cba09da86c24a0992b0adbc30e8312eae81 data/forgedfactory/recipes/copper_n2i.json
 162af149c522ea7860f8222e8f7b9f87d6e3764d data/forgedfactory/recipes/copper_pipe.json
+5491dcd756d59079b84da890d86911f49e60571d data/forgedfactory/recipes/copper_wire.json
 d9c273e52c7800ac91fb35ea8080a337f298fe5a data/forgedfactory/recipes/crude_chassis.json
 cd6588def93fbfe78b4c514ddb6e32b72868e0e4 data/forgedfactory/recipes/d2i_hr_ogn_blast.json
 d7d8f07fa8a813e822e22c3aaa918bca52714093 data/forgedfactory/recipes/d2i_hr_ogn_smelt.json
@@ -96,6 +101,7 @@ eb46c005622a5bcb789cbab0eaae661800ad9677 data/forgedfactory/recipes/dso2i_titani
 cf929a17b81e1c13dbc445c12e8f62a39ddabcdf data/forgedfactory/recipes/h-r_ogn_i2b.json
 07623358a0c1178741ece8bf4b44c3bee8f201bc data/forgedfactory/recipes/h-r_ogn_i2n.json
 ac669a36afc5fe7eb11320323832ffe179857382 data/forgedfactory/recipes/h-r_ogn_n2i.json
+2761f3561e948e50d62336a8c89d0c29008839df data/forgedfactory/recipes/iron_rod.json
 8039104a93617913c05e41d04ebc20b1f1496ca0 data/forgedfactory/recipes/machinist_hammer.json
 2537b03962948c481dcd2e2d5fb6fcde0e991470 data/forgedfactory/recipes/o2i_tin_blast.json
 b4f7feb3bd30f8bf06cedbc1a66cb40377161197 data/forgedfactory/recipes/o2i_tin_smelt.json

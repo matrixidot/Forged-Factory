@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-19T15:43:13.3820455	Item Models: forgedfactory
+// 1.19.2	2023-03-24T10:19:31.7063917	Item Models: forgedfactory
 c73db8e0c12325faaf228d4ed6f65e326cce1113 assets/forgedfactory/models/item/alloy_kiln.json
 3e7ffda7351ae9f35b92dbff29a382dc30364260 assets/forgedfactory/models/item/amethyst_dust.json
 326200bc2c81665bc0a361f774e4f3b788085576 assets/forgedfactory/models/item/brick_smasher.json
@@ -11,11 +11,13 @@ a167fa3c7870ec85a545399a4a155b83eb01c2bd assets/forgedfactory/models/item/bronze
 e2505a1426d28ce751acc5175798b52e0da0bdad assets/forgedfactory/models/item/bronze_nugget.json
 6f2b3eb407a289886a792fdba853398c22771baa assets/forgedfactory/models/item/bronze_plate.json
 24f486f607c6e7e938f34f90a20c620e7a950659 assets/forgedfactory/models/item/carbonated_iron_dust.json
+dd87af8491031ff9a840a6582503b21f826f974b assets/forgedfactory/models/item/copper_coil.json
 877fec627de1040e093377464dccd62e5fe086c0 assets/forgedfactory/models/item/copper_dust.json
 69060d36ca9f23a11c4800cf6125cebd1fe7fd8e assets/forgedfactory/models/item/copper_gear.json
 d920a03bb3a63415535d5004f03e4a61c4d1ecb6 assets/forgedfactory/models/item/copper_nugget.json
 cafa88e2df0af11206bee43df37dc77305f523c8 assets/forgedfactory/models/item/copper_pipe.json
 aa1ac4221a36723904115ab4636c8dfe4071c2c2 assets/forgedfactory/models/item/copper_plate.json
+2d3fbfa1cefb8b04b856fd925b3bc9522e5cd007 assets/forgedfactory/models/item/copper_wire.json
 1a5fa9e06b98b58ed9028aef51ec3150d8bbe26a assets/forgedfactory/models/item/crude_chassis.json
 e35ac156901a017fb20fd9983a241399a46af422 assets/forgedfactory/models/item/deepslate_tin_ore.json
 d44af1be8dc8254464d045e8638ee2bd22edcac6 assets/forgedfactory/models/item/deepslate_titanium_ore.json
@@ -29,6 +31,7 @@ fef4188a1a4df4f341cd349d4035fa0fa48bd985 assets/forgedfactory/models/item/hr_ogn
 3c0df2fee62c0de4a0fa907de9502548d83c48dc assets/forgedfactory/models/item/hyper_radioactive_oganesson_block.json
 dc02bdacc977accb8147c1082e67e1d326773b98 assets/forgedfactory/models/item/iron_dust.json
 7195191a5ff50f681f9a12d9c86f61e389a5dea9 assets/forgedfactory/models/item/iron_plate.json
+f4fdfa2dd7578c23c010b2d0108fac0e669c1764 assets/forgedfactory/models/item/iron_rod.json
 bb147eef20cf0233ebde2c799c4e1cd452539117 assets/forgedfactory/models/item/machinist_hammer.json
 f201a59e229381c009ac01c15b1a1aa93db45c5b assets/forgedfactory/models/item/oganesson_block.json
 7119e091f7948437b554be551746dfa508f589f0 assets/forgedfactory/models/item/oganesson_dust.json

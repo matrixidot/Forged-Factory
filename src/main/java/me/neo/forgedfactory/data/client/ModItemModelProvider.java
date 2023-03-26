@@ -32,6 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("bronze_chassis", modLoc("block/bronze_chassis"));
         withExistingParent("titanium_chassis", modLoc("block/titanium_chassis"));
         withExistingParent("tungsten_chassis", modLoc("block/tungsten_chassis"));
+        withExistingParent("copper_coil", modLoc("block/copper_coil"));
 
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
@@ -75,6 +76,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "steel_nugget");
         builder(itemGenerated, "steel_dust");
         builder(itemGenerated, "steel_plate");
+        builder(itemGenerated, "copper_wire");
+        builder(itemGenerated, "iron_rod");
 
 
         builder(itemGenerated, "pebble");

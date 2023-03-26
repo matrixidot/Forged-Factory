@@ -67,6 +67,13 @@ public class ItemTagsFF {
     public static final TagKey<Item> GEARS_TITANIUM = forgeTag("gears/titanium");
     public static final TagKey<Item> GEARS_TUNGSTEN = forgeTag("gears/tungsten");
 
+    public static final TagKey<Item> WIRES = forgeTag("wires");
+
+    public static final TagKey<Item> WIRES_COPPER = forgeTag("wires/copper");
+
+    public static final TagKey<Item> RODS = forgeTag("rods");
+
+    public static final TagKey<Item> RODS_IRON = forgeTag("rods/iron");
 
     public static final TagKey<Item> ORES_TIN = forgeTag("ores/tin");
     public static final TagKey<Item> ORES_TITANIUM = forgeTag("ores/titanium");

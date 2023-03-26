@@ -102,6 +102,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTagsFF.GEARS_TITANIUM).add(ModItems.TITANIUM_GEAR.get());
         tag(ItemTagsFF.GEARS_TUNGSTEN).add(ModItems.TUNGSTEN_GEAR.get());
 
+        tag(ItemTagsFF.WIRES);
+        tag(ItemTagsFF.WIRES_COPPER).add(ModItems.COPPER_WIRE.get());
+
+        tag(ItemTagsFF.RODS);
+        tag(ItemTagsFF.RODS_IRON).add(ModItems.IRON_ROD.get());
 
         copy(BlockTagsFF.STORAGE_BLOCKS_BRONZE, ItemTagsFF.STORAGE_BLOCKS_BRONZE);
         copy(BlockTagsFF.STORAGE_BLOCKS_HR_OGN, ItemTagsFF.STORAGE_BLOCKS_HR_OGN);

@@ -51,6 +51,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.BRONZE_BLOCK.get())
                 .add(ModBlocks.BRICK_SMASHER.get())
                 .add(ModBlocks.CRUDE_CHASSIS.get())
+                .add(ModBlocks.COPPER_COIL.get())
                 .add(ModBlocks.ALLOY_KILN.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.OGANESSON_BLOCK.get())

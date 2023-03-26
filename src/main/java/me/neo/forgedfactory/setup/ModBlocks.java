@@ -11,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -66,6 +67,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITANIUM_CHASSIS = registerBlock("titanium_chassis",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);
 
+
+    public static final RegistryObject<Block> COPPER_COIL = registerBlock("copper_coil",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops().sound(SoundType.METAL)), CreativeModTab.FORGED_FACTORY);
 
     // Registers a new block along with its item.
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

@@ -1,8 +1,9 @@
-// 1.19.2	2022-12-19T15:35:37.3029789	LootTables
+// 1.19.2	2023-03-24T10:19:31.6964184	LootTables
 00e573e79eb8933f1c23c4b345f2ad4cf3c89fe8 data/forgedfactory/loot_tables/blocks/alloy_kiln.json
 ff7fbb79696cfee65caed9269b477956c130c99b data/forgedfactory/loot_tables/blocks/brick_smasher.json
 6ec56d8100764c6b85a33092547f9e2f99350197 data/forgedfactory/loot_tables/blocks/bronze_block.json
 17da6862dfec6458111954997f921c45a1c5abcb data/forgedfactory/loot_tables/blocks/bronze_chassis.json
+ba43fc9dca3abd9de89006267fefc650afceb03f data/forgedfactory/loot_tables/blocks/copper_coil.json
 c94a49c3dbbc545a0b4a451e745bea7c214a31b9 data/forgedfactory/loot_tables/blocks/crude_chassis.json
 c57bc89a8efa7f55e195d6453b25473e3e25104a data/forgedfactory/loot_tables/blocks/deepslate_tin_ore.json
 098c3967b0dd1a3173c8c1e76b3f53efa3fd53ac data/forgedfactory/loot_tables/blocks/deepslate_titanium_ore.json
