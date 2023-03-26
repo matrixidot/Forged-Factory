@@ -19,12 +19,12 @@ public class BrickSmasherMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public BrickSmasherMenu(int id, Inventory inventory, FriendlyByteBuf buf) {
-        this(id, inventory, inventory.player.level.getBlockEntity(buf.readBlockPos()), new SimpleContainerData(2));
+        this(id, inventory, inventory.player.level.getBlockEntity(buf.readBlockPos()), new SimpleContainerData(4));
     }
 
     public BrickSmasherMenu(int id, Inventory inventory, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.BRICK_SMASHER_MENU.get(), id);
-        checkContainerSize(inventory, 2);
+        checkContainerSize(inventory, 3);
         blockEntity = (BrickSmasherEnt) entity;
         this.level = inventory.player.level;
         this.data = data;
@@ -32,18 +32,25 @@ public class BrickSmasherMenu extends AbstractContainerMenu {
         addPlayerHotbar(inventory);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
-            this.addSlot(new SlotItemHandler(handler, 1, 109, 35));
+            this.addSlot(new SlotItemHandler(handler, 0, 44, 35));
+            this.addSlot(new SlotItemHandler(handler, 1, 8, 53));
+            this.addSlot(new SlotItemHandler(handler, 2, 133, 35));
         });
         addDataSlots(data);
     }
     public boolean isCrafting() { return data.get(0) > 0; }
+    public boolean isBurning() { return data.get(2) > 0;}
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int progressArrowSize = 26;
+        int progressArrowSize = 55;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+    public int getBurnProgress() {
+        int i = this.data.get(3);
+        if (i == 0) i = 200;
+        return this.data.get(2) * 13 / i;
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
@@ -61,7 +68,7 @@ public class BrickSmasherMenu extends AbstractContainerMenu {
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {
         Slot sourceSlot = slots.get(index);

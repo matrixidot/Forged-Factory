@@ -24,7 +24,7 @@ public class ModBlockLootTables extends BlockLoot {
     private void blockDrops() {
         this.dropSelf(ModBlocks.OGANESSON_BLOCK.get());
         this.dropSelf(ModBlocks.TITANIUM_BLOCK.get());
-        this.dropSelf(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
+        this.dropSelf(ModBlocks.HR_OGN_BLOCK.get());
         this.dropSelf(ModBlocks.TUNGSTEN_BLOCK.get());
         this.dropSelf(ModBlocks.TIN_BLOCK.get());
         this.dropSelf(ModBlocks.BRONZE_BLOCK.get());
@@ -39,6 +39,7 @@ public class ModBlockLootTables extends BlockLoot {
 
         this.dropSelf(ModBlocks.ALLOY_KILN.get());
         this.dropSelf(ModBlocks.BRICK_SMASHER.get());
+        this.dropSelf(ModBlocks.DUST_MIXER.get());
 
     }
 

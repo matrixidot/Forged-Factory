@@ -79,7 +79,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add(ModBlocks.OGANESSON_BLOCK.get(), "Block of Oganesson");
         add(ModBlocks.TITANIUM_BLOCK.get(), "Block of Titanium");
         add(ModBlocks.TUNGSTEN_BLOCK.get(), "Block of Tungsten");
-        add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get(), "Block of H-R Oganesson");
+        add(ModBlocks.HR_OGN_BLOCK.get(), "Block of H-R Oganesson");
         add(ModBlocks.TIN_BLOCK.get(), "Block of Tin");
         add(ModBlocks.BRONZE_BLOCK.get(), "Block of Bronze");
         add(ModBlocks.STEEL_BLOCK.get(), "Block of Steel");

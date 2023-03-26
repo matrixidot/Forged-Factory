@@ -16,7 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlock(ModBlocks.OGANESSON_BLOCK.get());
-        simpleBlock(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get());
+        simpleBlock(ModBlocks.HR_OGN_BLOCK.get());
         simpleBlock(ModBlocks.TITANIUM_BLOCK.get());
         simpleBlock(ModBlocks.TUNGSTEN_BLOCK.get());
         simpleBlock(ModBlocks.TIN_BLOCK.get());

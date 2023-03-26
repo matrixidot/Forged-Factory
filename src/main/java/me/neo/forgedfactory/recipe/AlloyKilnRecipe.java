@@ -1,5 +1,6 @@
 package me.neo.forgedfactory.recipe;
 
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import me.neo.forgedfactory.FF;
@@ -20,48 +21,20 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
-    private final ResourceLocation id;
-    private ItemStack output;
-    private NonNullList<Ingredient> ingredient;
-    private int firstIngCount;
-    private int secondIngCount;
-    private int outputAmount;
+public class AlloyKilnRecipe extends FFRecipe {
 
     public AlloyKilnRecipe(ResourceLocation id) {
-        this.id = id;
-    }
-
-    @Override
-    public boolean matches(SimpleContainer pContainer, Level pLevel) {
-        if (pLevel.isClientSide()) return false;
-        return (test(pContainer, 0, 0, firstIngCount) && test(pContainer, 1, 1, secondIngCount));
-    }
-    // Returns true if the stack matches with the stack in the slot and if the amount is the same or higher.
-    private boolean test(SimpleContainer container, int ingNum,int slot, int amnt) {
-        return ingredient.get(ingNum).test(container.getItem(slot)) && container.getItem(slot).getCount() >= amnt;
-    }
-    public int getFirstIngCount() { return firstIngCount; }
-    public int getSecondIngCount() { return secondIngCount; }
-    public int getOutputAmount() { return outputAmount; }
-
-    public List<Item> getFirstInputAsList() {
-        ItemStack stack = ingredient.get(0).getItems()[0];
-        return Collections.singletonList(stack.getItem());
-    }
-    public List<Item> getSecondInputAsList() {
-        ItemStack stack = ingredient.get(1).getItems()[0];
-        return Collections.singletonList(stack.getItem());
+        super(id);
     }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
-        return ingredient;
+        return getInputs();
     }
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer) {
-        return output;
+        return getOutput();
     }
 
     @Override
@@ -71,12 +44,12 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack getResultItem() {
-        return output.copy();
+        return getOutput().copy();
     }
 
     @Override
     public ResourceLocation getId() {
-        return id;
+        return getRecipeID();
     }
 
     @Override
@@ -103,41 +76,45 @@ public class AlloyKilnRecipe implements Recipe<SimpleContainer> {
         public AlloyKilnRecipe fromJson(ResourceLocation pRecipeId, JsonObject json) {
             AlloyKilnRecipe recipe = new AlloyKilnRecipe(pRecipeId);
             JsonArray ingredientJson = json.getAsJsonArray("ingredients");
-            recipe.ingredient = NonNullList.withSize(2, Ingredient.EMPTY);
-            recipe.firstIngCount = GsonHelper.getAsInt(ingredientJson.get(0).getAsJsonObject(), "count");
-            recipe.secondIngCount = GsonHelper.getAsInt(ingredientJson.get(1).getAsJsonObject(), "count");
-            for (int i = 0; i < recipe.ingredient.size(); i++) {
-                recipe.ingredient.set(i, Ingredient.fromJson(ingredientJson.get(i)));
+            recipe.setIngredients(NonNullList.withSize(2, Ingredient.EMPTY));
+
+            recipe.setIngredientCount(GsonHelper.getAsByte(ingredientJson.get(0).getAsJsonObject(), "count"));
+            recipe.setIngredientCount(GsonHelper.getAsByte(ingredientJson.get(1).getAsJsonObject(), "count"));
+
+            for (int i = 0; i < recipe.getInputs().size(); i++) {
+                recipe.getInputs().set(i, Ingredient.fromJson(ingredientJson.get(i)));
             }
+            JsonArray miscJson = json.getAsJsonArray("misc");
+            recipe.setProcessingTime(GsonHelper.getAsInt(miscJson.get(0).getAsJsonObject(), "time", 100));
+            recipe.setPowerUsage(GsonHelper.getAsInt(miscJson.get(1).getAsJsonObject(), "power", 0));
+
             // Output Slot
             ResourceLocation itemResourceLocation = ResourceLocation.of(GsonHelper.getAsString(json.get("output").getAsJsonObject(), "item", "minecraft:air"), ':');
-            int itemAmount = GsonHelper.getAsInt(json.get("output").getAsJsonObject(), "count", 1);
-            recipe.output = new ItemStack(ForgeRegistries.ITEMS.getValue(itemResourceLocation));
-            recipe.outputAmount = itemAmount;
-
-
+            byte itemAmount = GsonHelper.getAsByte(json.get("output").getAsJsonObject(), "count", (byte) 1);
+            recipe.setOutput(new ItemStack(ForgeRegistries.ITEMS.getValue(itemResourceLocation)));
+            recipe.setOutputAmount(itemAmount);
             return recipe;
         }
 
         @Override
         public @Nullable AlloyKilnRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
             AlloyKilnRecipe recipe = new AlloyKilnRecipe(pRecipeId);
-            recipe.firstIngCount = pBuffer.readByte();
-            recipe.secondIngCount = pBuffer.readByte();
-            recipe.output = pBuffer.readItem();
-            recipe.outputAmount = pBuffer.readInt();
+            recipe.setIngredientCount(0, pBuffer.readByte());
+            recipe.setIngredientCount(1, pBuffer.readByte());
+            recipe.setOutput(pBuffer.readItem());
+            recipe.setOutputAmount(pBuffer.readByte());
             return recipe;
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf pBuffer, AlloyKilnRecipe pRecipe) {
-            pBuffer.writeByte(pRecipe.getFirstIngCount());
-            pBuffer.writeByte(pRecipe.getSecondIngCount());
-            pBuffer.writeItem(pRecipe.output);
-            pBuffer.writeInt(pRecipe.outputAmount);
+            pBuffer.writeByte(pRecipe.getIngredientAmount(0));
+            pBuffer.writeByte(pRecipe.getIngredientAmount(1));
+            pBuffer.writeItem(pRecipe.getOutput());
+            pBuffer.writeByte(pRecipe.getOutputAmount());
 
-            pRecipe.ingredient.get(0).toNetwork(pBuffer);
-            pRecipe.ingredient.get(1).toNetwork(pBuffer);
+            pRecipe.getIngredients().get(0).toNetwork(pBuffer);
+            pRecipe.getIngredients().get(1).toNetwork(pBuffer);
         }
     }
 }

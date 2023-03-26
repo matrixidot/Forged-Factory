@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "A": {
+    "C": {
+      "tag": "forge:plates/steel"
+    },
+    "M": {
       "item": "minecraft:amethyst_shard"
     },
-    "H": {
+    "S": {
       "item": "forgedfactory:machinist_hammer"
     },
-    "N": {
+    "T": {
       "tag": "forge:nuggets/steel"
-    },
-    "P": {
-      "tag": "forge:plates/steel"
     }
   },
   "pattern": [
-    "PNP",
-    "AHA",
-    "PNP"
+    "CTC",
+    "MSM",
+    "CTC"
   ],
   "result": {
     "item": "forgedfactory:steel_chassis"

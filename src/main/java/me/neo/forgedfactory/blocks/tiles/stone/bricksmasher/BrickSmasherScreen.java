@@ -37,12 +37,19 @@ public class BrickSmasherScreen extends AbstractContainerScreen<BrickSmasherMenu
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
         renderProgressArrow(pPoseStack, x, y);
+        renderHeatFlame(pPoseStack, x, y);
     }
 
     private void renderProgressArrow(PoseStack poseStack, int x, int y) {
         if (menu.isCrafting()) {
             // Stack, pos x, pos y, filled texture x, filled texture y, something, something
-            blit(poseStack, x + 80, y + 35, 176, 0, menu.getScaledProgress(), 17);
+            blit(poseStack, x + 67, y + 34, 176, 14, menu.getScaledProgress(), 17);
+        }
+    }
+
+    private void renderHeatFlame(PoseStack stack, int x, int y) {
+        if(menu.isBurning()) {
+            blit(stack, x + 8, y + 37 + 12 - menu.getBurnProgress(), 176, 12 - menu.getBurnProgress(), 14, menu.getBurnProgress() + 1);
         }
     }
 

@@ -21,32 +21,19 @@ import org.jetbrains.annotations.Nullable;
 import javax.annotation.Nonnull;
 import javax.crypto.interfaces.PBEKey;
 
-public class BrickSmasherRecipe implements Recipe<SimpleContainer> {
-    private final ResourceLocation id;
-    private ItemStack output;
-    private NonNullList<Ingredient> ingredient;
-    private int ingredientCount;
-
-    public BrickSmasherRecipe(ResourceLocation id) { this.id = id;}
-
-    @Override
-    public boolean matches(SimpleContainer pContainer, Level pLevel) {
-        if (pLevel.isClientSide()) return false;
-        return test(pContainer, 0, 0, ingredientCount);
+public class BrickSmasherRecipe extends FFRecipe {
+    public BrickSmasherRecipe(ResourceLocation id) {
+        super(id);
     }
-    private boolean test(SimpleContainer container, int ingNum,int slot, int amnt) {
-        return ingredient.get(ingNum).test(container.getItem(slot)) && container.getItem(slot).getCount() >= amnt;
-    }
-    public int getIngredientCount() { return ingredientCount; }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {
-        return ingredient;
+        return getInputs();
     }
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer) {
-        return output;
+        return getOutput();
     }
 
     @Override
@@ -56,12 +43,12 @@ public class BrickSmasherRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack getResultItem() {
-        return output.copy();
+        return getOutput().copy();
     }
 
     @Override
     public ResourceLocation getId() {
-        return id;
+        return getRecipeID();
     }
 
     @Override
@@ -88,29 +75,33 @@ public class BrickSmasherRecipe implements Recipe<SimpleContainer> {
         public BrickSmasherRecipe fromJson(ResourceLocation pRecipeId, JsonObject json) {
             BrickSmasherRecipe recipe = new BrickSmasherRecipe(pRecipeId);
             JsonArray ingredientJson = json.getAsJsonArray("ingredients");
-            recipe.ingredient = NonNullList.withSize(1, Ingredient.EMPTY);
-            recipe.ingredientCount = GsonHelper.getAsInt(ingredientJson.get(0).getAsJsonObject(), "count");
-            recipe.ingredient.set(0, Ingredient.fromJson(ingredientJson.get(0)));
+            recipe.setIngredients(NonNullList.withSize(1, Ingredient.EMPTY));
+            recipe.setIngredientCount(GsonHelper.getAsByte(ingredientJson.get(0).getAsJsonObject(), "count"));
+            recipe.getInputs().set(0, Ingredient.fromJson(ingredientJson.get(0)));
 
             ResourceLocation itemResourceLocation = ResourceLocation.of(GsonHelper.getAsString(json.get("output").getAsJsonObject(), "item", "minecraft:air"), ':');
-            recipe.output = new ItemStack(ForgeRegistries.ITEMS.getValue(itemResourceLocation));
-
+            byte itemAmount = GsonHelper.getAsByte(json.get("output").getAsJsonObject(), "count", (byte) 1);
+            recipe.setOutput(new ItemStack(ForgeRegistries.ITEMS.getValue(itemResourceLocation)));
+            recipe.setOutputAmount(itemAmount);
             return recipe;
         }
 
         @Override
         public @Nullable BrickSmasherRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
             BrickSmasherRecipe recipe = new BrickSmasherRecipe(pRecipeId);
-            recipe.ingredientCount = pBuffer.readByte();
-            recipe.output = pBuffer.readItem();
+            recipe.setIngredientCount(0, pBuffer.readByte());
+            recipe.setOutput(pBuffer.readItem());
+            recipe.setOutputAmount(pBuffer.readByte());
             return recipe;
         }
 
         @Override
         public void toNetwork(FriendlyByteBuf pBuffer, BrickSmasherRecipe pRecipe) {
-            pBuffer.writeByte(pRecipe.getIngredientCount());
-            pBuffer.writeItem(pRecipe.output);
-            pRecipe.ingredient.get(0).toNetwork(pBuffer);
+            pBuffer.writeByte(pRecipe.getIngredientAmount(0));
+            pBuffer.writeItem(pRecipe.getOutput());
+            pBuffer.writeByte(pRecipe.getOutputAmount());
+
+            pRecipe.getIngredients().get(0).toNetwork(pBuffer);
         }
     }
 }

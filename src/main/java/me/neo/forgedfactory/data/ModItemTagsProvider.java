@@ -10,7 +10,6 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 public class ModItemTagsProvider extends ItemTagsProvider {
@@ -31,7 +30,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.TUNGSTEN_INGOT.get());
         tag(Tags.Items.STORAGE_BLOCKS)
                 .add(ModBlocks.TUNGSTEN_BLOCK.get().asItem())
-                .add(ModBlocks.HYPER_RADIOACTIVE_OGANESSON_BLOCK.get().asItem())
+                .add(ModBlocks.HR_OGN_BLOCK.get().asItem())
                 .add(ModBlocks.TITANIUM_BLOCK.get().asItem())
                 .add(ModBlocks.TIN_BLOCK.get().asItem())
                 .add(ModBlocks.BRONZE_BLOCK.get().asItem())
